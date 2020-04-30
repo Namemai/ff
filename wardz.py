@@ -55,14 +55,34 @@ channelToken = ke.getChannelResult()
 kf = LINE("yel10184@bcaoo.com","mai065558mai")
 kf.log("Auth Token : " + str(kf.authToken))
 channelToken = kf.getChannelResult()
+#===========================================================================#
+k8 = LINE("qij17520@zzrgg.com","mai065558mai")
+k8.log("Auth Token : " + str(k8.authToken))
+channelToken = k8.getChannelResult()
+#===========================================================================#
+k9 = LINE("ldf56885@eoopy.com","mai065558mai")
+k9.log("Auth Token : " + str(k9.authToken))
+channelToken = k9.getChannelResult()
+#===========================================================================#
+k10 = LINE("qii76359@bcaoo.com","mai065558mai")
+k10.log("Auth Token : " + str(k10.authToken))
+channelToken = k10.getChannelResult()
+#===========================================================================#
+k11 = LINE("xvx65670@bcaoo.com","mai065558mai")
+k11.log("Auth Token : " + str(k11.authToken))
+channelToken = k11.getChannelResult()
+#===========================================================================#
+k12 = LINE("axz83700@eoopy.com","mai065558mai")
+k12.log("Auth Token : " + str(k12.authToken))
+channelToken = k12.getChannelResult()
 #========================Tokenjs===================================================#
-ajs = LINE("gcu8936@zzrgg.com","mai065558mai")
+ajs = LINE("bsx99927@zzrgg.com","mai065558mai")
 ajs.log("Auth Token : " + str(kf.authToken))
 channelToken = ajs.getChannelResult()
 #==============•••••••••••••••••   BOT WAR V`1 BY TEAM BOT PROTECT •••••••••••••••==============#
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m
 
-	    WELCOME TO SELFBOT PROTECT WAR V'1 BY DHENZA
+	    WELCOME TO SELFBOT PROTECT WAR V'1 BY MAI
 	
 • SUPORT PROTECT ANTIJS WAR MODE AND KICKALL HARAP GUNAKAN DENGAN BIJAK
 • TOKEN MENGUNAKAN CLOVAFRIEND bisa lewat email format ('email','paswod')
@@ -143,139 +163,6 @@ print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 ███████████████████████████████████
-
- @@@@@@   
-@@@@@@@   
-!@@       
-!@!       
-!!@@!!    
- !!@!!!   
-     !:!  
-    !:!   
-:::: ::   
-:: : :    
-          
-@@@  
-@@@  
-@@!  
-!@!  
-!!@  
-!!!  
-!!:  
-:!:  
- ::  
-:    
-     
-@@@       
-@@@       
-@@!       
-!@!       
-@!!       
-!!!       
-!!:       
- :!:      
- :: ::::  
-: :: : :  
-          
-@@@@@@@@  
-@@@@@@@@  
-@@!       
-!@!       
-@!!!:!    
-!!!!!:    
-!!:       
-:!:       
- :: ::::  
-: :: ::   
-          
-@@@  @@@  
-@@@@ @@@  
-@@!@!@@@  
-!@!!@!@!  
-@!@ !!@!  
-!@!  !!!  
-!!:  !!!  
-:!:  !:!  
- ::   ::  
-::    :   
-          
-@@@@@@@  
-@@@@@@@  
-  @@!    
-  !@!    
-  @!!    
-  !!!    
-  !!:    
-  :!:    
-   ::    
-   :     
-         
-@@@  @@@  
-@@@  @@@  
-@@!  !@@  
-!@!  @!!  
-@!@@!@!   
-!!@!!!    
-!!: :!!   
-:!:  !:!  
- ::  :::  
- :   :::  
-          
-@@@  
-@@@  
-@@!  
-!@!  
-!!@  
-!!!  
-!!:  
-:!:  
- ::  
-:    
-     
-@@@       
-@@@       
-@@!       
-!@!       
-@!!       
-!!!       
-!!:       
- :!:      
- :: ::::  
-: :: : :  
-          
-@@@       
-@@@       
-@@!       
-!@!       
-@!!       
-!!!       
-!!:       
- :!:      
- :: ::::  
-: :: : :  
-          
-@@@@@@@@  
-@@@@@@@@  
-@@!       
-!@!       
-@!!!:!    
-!!!!!:    
-!!:       
-:!:       
- :: ::::  
-: :: ::   
-          
-@@@@@@@   
-@@@@@@@@  
-@@!  @@@  
-!@!  @!@  
-@!@!!@!   
-!!@!@!    
-!!: :!!   
-:!:  !:!  
-::   :::  
- :   : :  
-         
 	
 Login Time %s \033[0m\n\n"""%(Bot_startTime))
 print ("Proses login sucsess")
