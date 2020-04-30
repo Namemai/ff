@@ -2238,7 +2238,7 @@ def bot(op):
                                 kf.updateProfile(profile)
                                 kf.sendMessage(msg.to,"Succes " + string + "") 
                      
-                        elif cmd == "respon":
+                        elif cmd == "bb":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 ka.sendMessage(msg.to,"𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑆𝐼𝐿𝐸𝑁𝑇𝐾𝐼𝐿𝐿𝐸𝑅")
