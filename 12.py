@@ -1804,9 +1804,9 @@ def bot(op):
                 if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
                     wait["blacklist"][op.param2] = True
                     try:
-                        cl.kickoutFromGroup(op.param1,[op.param2])
-                        cl.inviteIntoGroup(op.param1,Bots)
-                        k12.acceptGroupInvitation(op.param1)
+                        k12.kickoutFromGroup(op.param1,[op.param2])
+                        k12.inviteIntoGroup(op.param1,Bots)
+                        cl.acceptGroupInvitation(op.param1)
                         ka.cancelGroupInvitation(op.param1,[op.param2])
                     except:
                         try:
