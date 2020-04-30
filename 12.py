@@ -84,12 +84,7 @@ print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m
 
 	    WELCOME TO SELFBOT PROTECT WAR V'1 BY MAI
 	
-• SUPORT PROTECT ANTIJS WAR MODE AND KICKALL HARAP GUNAKAN DENGAN BIJAK
-• TOKEN MENGUNAKAN CLOVAFRIEND bisa lewat email format ('email','paswod')
-• SCRIFT INI HANAYA BISA DI GUNAKAN MENGUNAKAN VPS AGAR STABIL 
-• SUPORT TEAM ALL TEAM BOTS
-• ID LINE : teambotprotect
-• EDITORR BY DHENZA
+
 	
 ███████████████████████████████████
 	
