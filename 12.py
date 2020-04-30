@@ -2763,7 +2763,7 @@ def bot(op):
                                 DZwait["autoJoin"] = False
                                 cl.sendMessage(msg.to,"Autojoin allready off")
                           
-                        elif cmd == "tim":
+                        elif cmd == "ออน":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                eltime = time.time() - listTimeLiking
@@ -2897,6 +2897,18 @@ def bot(op):
                                    ke.sendMessage(msg.to,"Bersih ")
                                    kf.removeAllMessages(op.param2)
                                    kf.sendMessage(msg.to,"Bersih ")
+                                   k8.removeAllMessages(op.param2)
+                                   k8.sendMessage(msg.to,"Bersih ")
+                                   k9.removeAllMessages(op.param2)
+                                   k9.sendMessage(msg.to,"Bersih ")
+                                   k10.removeAllMessages(op.param2)
+                                   k10.sendMessage(msg.to,"Bersih ")
+                                   k11.removeAllMessages(op.param2)
+                                   k11.sendMessage(msg.to,"Bersih ")
+                                   k12.removeAllMessages(op.param2)
+                                   k12.sendMessage(msg.to,"Bersih ")
+                                   cl.removeAllMessages(op.param2)
+                                   cl.sendMessage(msg.to,"Bersih ")
                         elif cmd == 'mid':
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
@@ -3144,7 +3156,6 @@ def bot(op):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
-                                cl.sendMessage(msg.to, "im sorry i leave in group "+str(G.name))
                                 cl.leaveGroup(msg.to)
                       
                         elif 'Proqr ' in msg.text:
@@ -3570,7 +3581,7 @@ def bot(op):
                              		for group in gr:
                             	  	 	cl.sendMessage(group, "Leave All group i'm sorry \nJika perlu silahkan add Creator kami 👌👇\nhttp://line.me/ti/p/~teambotprotect")                        		   	
                                            
-                        elif cmd.startswith('inviteme '):
+                        elif cmd.startswith('ivme '):
                               if msg._from in ownerbot or msg._from in DHENZA:    
                                text = msg.text.split()
                                number = text[1]
