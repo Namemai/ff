@@ -2102,14 +2102,14 @@ def bot(op):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                start = time.time()
-                               cl.sendMessage(msg.to, "Tes kecepatan bots")
+                               cl.sendMessage(msg.to, "สปีดบอท")
                                elapsed_time = time.time() - start
-                               cl.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
-                               ka.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
-                               kb.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
-                               kc.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
-                               kd.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
-                               ke.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
+                               cl.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               ka.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               kb.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               kc.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               kd.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               ke.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                
                         elif cmd == "reboot":
                           if DZwait["selfbot"] == True:
