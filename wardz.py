@@ -2098,7 +2098,7 @@ def bot(op):
                                kd.sendMessage(msg.to,"threading.Thread(target=login, args=('d','"+kd.authToken+"')).start()")
                                ke.sendMessage(msg.to,"threading.Thread(target=login, args=('e','"+ke.authToken+"')).start()")
                                kf.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+kf.authToken+"')).start()")
-                        elif cmd == ".speed" or cmd == ".sp":
+                        elif cmd == ".speed" or cmd == "sp":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                start = time.time()
@@ -2264,7 +2264,7 @@ def bot(op):
                                 except:
                                     pass
 
-                        elif cmd == "masuk" or cmd == "/masuk":
+                        elif cmd == "masuk" or cmd == "in":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
@@ -2284,7 +2284,7 @@ def bot(op):
                                 
                                 
 
-                        elif cmd == "pulang" or cmd == "/pulang":
+                        elif cmd == "pulang" or cmd == "out":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
@@ -2448,7 +2448,7 @@ def bot(op):
                                          msgs = ""
                                     cl.sendMessage(msg.to, "All protect mode off")
                        
-                        elif ("Kick1 " in msg.text):
+                        elif ("Bk " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -2459,7 +2459,6 @@ def bot(op):
                                for target in targets:
                                    if target not in TEAM:
                                        try:
-                                           cl.sendMessage(msg.to, "Im sorry i kick out from group 😡")
                                            random.choice(team2).kickoutFromGroup(msg.to, [target])
                                        except:
                                            pass
@@ -2633,7 +2632,7 @@ def bot(op):
                                 DZwait["Tdblacklist"] = False
                                 cl.sendMessage(msg.to,"Berhasil Refresh all command")
                        
-                        elif cmd == "cek bl" or text.lower() == 'banlist':
+                        elif cmd == "bc" or text.lower() == 'banlist':
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot or msg._from in DHENZA:
                               if wait["blacklist"] == {}:
@@ -2644,7 +2643,7 @@ def bot(op):
                                       mc += "\n?? "+cl.getContact(mi_d).displayName
                                   cl.sendMessage(msg.to,mc + "")
                       
-                        elif cmd == "clearban" or text.lower() == 'dbn':
+                        elif cmd == "clearban" or text.lower() == 'cb':
                           if msg._from in ownerbot or msg._from in DHENZA:
                             if msg._from in ownerbot:
                               ang = cl.getContacts(wait["blacklist"])
