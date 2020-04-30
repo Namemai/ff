@@ -2884,7 +2884,19 @@ def bot(op):
                                    k12.sendMessage(msg.to,"Bersih ")
                                    cl.removeAllMessages(op.param2)
                                    cl.sendMessage(msg.to,"Bersih ")
-
+                               except:
+                                   ka.removeAllMessages(op.param2)
+                                   ka.sendMessage(msg.to,"Bersih ")
+                                   kb.removeAllMessages(op.param2)
+                                   kb.sendMessage(msg.to,"Bersih ")
+                                   kc.removeAllMessages(op.param2)
+                                   kc.sendMessage(msg.to,"Bersih ")
+                                   kd.removeAllMessages(op.param2)
+                                   kd.sendMessage(msg.to,"Bersih ")
+                                   ke.removeAllMessages(op.param2)
+                                   ke.sendMessage(msg.to,"Bersih ")
+                                   kf.removeAllMessages(op.param2)
+                                   kf.sendMessage(msg.to,"Bersih ")
                         elif cmd == 'mid':
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
