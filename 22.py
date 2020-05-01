@@ -55,27 +55,63 @@ channelToken = ke.getChannelResult()
 kf = LINE("yel10184@bcaoo.com","mai065558mai")
 kf.log("Auth Token : " + str(kf.authToken))
 channelToken = kf.getChannelResult()
-#===========================================================================#
+#============================[7]===============================================#
 k8 = LINE("qij17520@zzrgg.com","mai065558mai")
 k8.log("Auth Token : " + str(k8.authToken))
 channelToken = k8.getChannelResult()
-#===========================================================================#
+#============================[8]===============================================#
 k9 = LINE("ldf56885@eoopy.com","mai065558mai")
 k9.log("Auth Token : " + str(k9.authToken))
 channelToken = k9.getChannelResult()
-#===========================================================================#
+#============================[9]===============================================#
 k10 = LINE("qii76359@bcaoo.com","mai065558mai")
 k10.log("Auth Token : " + str(k10.authToken))
 channelToken = k10.getChannelResult()
-#===========================================================================#
+#==============================[10]=============================================#
 k11 = LINE("xvx65670@bcaoo.com","mai065558mai")
 k11.log("Auth Token : " + str(k11.authToken))
 channelToken = k11.getChannelResult()
-#===========================================================================#
+#============================[11]===============================================#
 k12 = LINE("axz83700@eoopy.com","mai065558mai")
 k12.log("Auth Token : " + str(k12.authToken))
 channelToken = k12.getChannelResult()
-#========================Tokenjs===================================================#
+#==============================[12]=============================================#
+k13 = LINE("axz83700@eoopy.com","mai065558mai")
+k13.log("Auth Token : " + str(k13.authToken))
+channelToken = k13.getChannelResult()
+#=============================[13]==============================================#
+k14 = LINE("axz83700@eoopy.com","mai065558mai")
+k14.log("Auth Token : " + str(k14.authToken))
+channelToken = k14.getChannelResult()
+#==============================[14]=============================================#
+k15 = LINE("axz83700@eoopy.com","mai065558mai")
+k15.log("Auth Token : " + str(k15.authToken))
+channelToken = k15.getChannelResult()
+#============================[15]===============================================#
+k16 = LINE("axz83700@eoopy.com","mai065558mai")
+k16.log("Auth Token : " + str(k16.authToken))
+channelToken = k16.getChannelResult()
+#==============================[16]=============================================#
+k17 = LINE("axz83700@eoopy.com","mai065558mai")
+k17.log("Auth Token : " + str(k17.authToken))
+channelToken = k17.getChannelResult()
+#=============================[17]==============================================#
+k18 = LINE("axz83700@eoopy.com","mai065558mai")
+k18.log("Auth Token : " + str(k18.authToken))
+channelToken = k18.getChannelResult()
+#=============================[18]==============================================#
+k19 = LINE("axz83700@eoopy.com","mai065558mai")
+k19.log("Auth Token : " + str(k19.authToken))
+channelToken = k19.getChannelResult()
+#==============================[19]=============================================#
+k20 = LINE("axz83700@eoopy.com","mai065558mai")
+k20.log("Auth Token : " + str(k20.authToken))
+channelToken = k20.getChannelResult()
+#===========================================================================#
+k21 = LINE("axz83700@eoopy.com","mai065558mai")
+k21.log("Auth Token : " + str(k21.authToken))
+channelToken = k21.getChannelResult()
+#========================[20]===================================================#
 ajs = LINE("bsx99927@zzrgg.com","mai065558mai")
 ajs.log("Auth Token : " + str(kf.authToken))
 channelToken = ajs.getChannelResult()
@@ -164,18 +200,27 @@ print ("Proses login sucsess")
 
 call = cl
 oepoll = OEPoll(cl)
-team1=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12]
-team2=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12]
-team3=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12]
-team4=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12]
-team5=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12]
-team6=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12]
-team7=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12]
-team8=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12]
-team9=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12]
-team10=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12]
-team11=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12]
-team12=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12]
+team1=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team2=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team3=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team4=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team5=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team6=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team7=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team8=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team9=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team10=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team11=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team12=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team13=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team14=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team15=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team16=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team17=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team18=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team19=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team20=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team21=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
 mid = cl.getProfile().mid
 Amid = ka.getProfile().mid
 Bmid = kb.getProfile().mid
@@ -188,8 +233,17 @@ Hmid = k9.getProfile().mid
 Imid = k10.getProfile().mid
 Jmid = k11.getProfile().mid
 Kmid = k12.getProfile().mid
+K13mid = k13.getProfile().mid
+K14mid = k14.getProfile().mid
+K15mid = k15.getProfile().mid
+K16mid = k16.getProfile().mid
+K17mid = k17.getProfile().mid
+K18mid = k18.getProfile().mid
+K19mid = k19.getProfile().mid
+K20mid = k20.getProfile().mid
+K21mid = k21.getProfile().mid
 JSmid = ajs.getProfile().mid
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Kmid]
+Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Kmid,K13mid,K14mid,K15mid,K16mid,K17mid,K18mid,K19mid,K20mid,K21mid]
 ownerbot = ["u7dd3b094df38ef9fa28d313f73455389"]
 DHENZA = ["u7dd3b094df38ef9fa28d313f73455389"]
 TEAM = Bots+ownerbot+DHENZA
