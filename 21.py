@@ -107,11 +107,11 @@ channelToken = k19.getChannelResult()
 k20 = LINE("axz83700@eoopy.com","mai065558mai")
 k20.log("Auth Token : " + str(k20.authToken))
 channelToken = k20.getChannelResult()
-#===========================================================================#
+#===========================[20]================================================#
 k21 = LINE("axz83700@eoopy.com","mai065558mai")
 k21.log("Auth Token : " + str(k21.authToken))
 channelToken = k21.getChannelResult()
-#========================[20]===================================================#
+#========================[21]===================================================#
 ajs = LINE("bsx99927@zzrgg.com","mai065558mai")
 ajs.log("Auth Token : " + str(kf.authToken))
 channelToken = ajs.getChannelResult()
@@ -3710,6 +3710,15 @@ def bot(op):
                                     k10.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     k11.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     k12.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                    k13.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                    k14.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                    k15.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                    k16.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                    k17.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                    k18.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                    k19.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                    k20.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                    k21.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     kc.kickoutFromGroup(op.param1,[op.param2])
                                 except:
                                     try:
@@ -3753,9 +3762,9 @@ def bot(op):
                                                                     k12.inviteIntoGroup(op.param1,[op.param3])
                                                                 except:
                                                                     try:
-                                                                        cl.findAndAddContactsByMid(op.param3)
-                                                                        cl.kickoutFromGroup(op.param1,[op.param2])
-                                                                        cl.inviteIntoGroup(op.param1,[op.param3])
+                                                                        random.choice(team2).findAndAddContactsByMid(op.param3)
+                                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                                        random.choice(team2).inviteIntoGroup(op.param1,[op.param3])
                                                                     except:
                                                                         try:
                                                                             random.choice(team2).findAndAddContactsByMid(op.param3)
@@ -4018,6 +4027,132 @@ def bot(op):
                         for _mid in gMembMids:
                           if _mid in wait["blacklist"]:
                             k12.kickoutFromGroup(op.param1,[_mid])
+        if op.type == 13:
+            if K13mid in op.param3:
+                if DZwait["autoJoin"] == True:
+                    if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
+                        k13.acceptGroupInvitation(op.param1)
+                        anu = k13.getContact(op.param2)
+                        k13.leaveGroup(op.param1)
+                    else:
+                        k13.acceptGroupInvitation(op.param1)
+                        group = k13.getGroup(op.param1)
+                        gMembMids = [contact.mid for contact in group.members]
+                        for _mid in gMembMids:
+                          if _mid in wait["blacklist"]:
+                            k13.kickoutFromGroup(op.param1,[_mid])
+        if op.type == 13:
+            if K14mid in op.param3:
+                if DZwait["autoJoin"] == True:
+                    if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
+                        k14.acceptGroupInvitation(op.param1)
+                        anu = k14.getContact(op.param2)
+                        k14.leaveGroup(op.param1)
+                    else:
+                        k14.acceptGroupInvitation(op.param1)
+                        group = k14.getGroup(op.param1)
+                        gMembMids = [contact.mid for contact in group.members]
+                        for _mid in gMembMids:
+                          if _mid in wait["blacklist"]:
+                            k14.kickoutFromGroup(op.param1,[_mid])
+        if op.type == 13:
+            if K15mid in op.param3:
+                if DZwait["autoJoin"] == True:
+                    if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
+                        k15.acceptGroupInvitation(op.param1)
+                        anu = k15.getContact(op.param2)
+                        k15.leaveGroup(op.param1)
+                    else:
+                        k15.acceptGroupInvitation(op.param1)
+                        group = k15.getGroup(op.param1)
+                        gMembMids = [contact.mid for contact in group.members]
+                        for _mid in gMembMids:
+                          if _mid in wait["blacklist"]:
+                            k15.kickoutFromGroup(op.param1,[_mid])
+        if op.type == 13:
+            if K16mid in op.param3:
+                if DZwait["autoJoin"] == True:
+                    if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
+                        k16.acceptGroupInvitation(op.param1)
+                        anu = k16.getContact(op.param2)
+                        k16.leaveGroup(op.param1)
+                    else:
+                        k16.acceptGroupInvitation(op.param1)
+                        group = k16.getGroup(op.param1)
+                        gMembMids = [contact.mid for contact in group.members]
+                        for _mid in gMembMids:
+                          if _mid in wait["blacklist"]:
+                            k16.kickoutFromGroup(op.param1,[_mid])
+        if op.type == 13:
+            if K17mid in op.param3:
+                if DZwait["autoJoin"] == True:
+                    if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
+                        k17.acceptGroupInvitation(op.param1)
+                        anu = k17.getContact(op.param2)
+                        k17.leaveGroup(op.param1)
+                    else:
+                        k17.acceptGroupInvitation(op.param1)
+                        group = k17.getGroup(op.param1)
+                        gMembMids = [contact.mid for contact in group.members]
+                        for _mid in gMembMids:
+                          if _mid in wait["blacklist"]:
+                            k17.kickoutFromGroup(op.param1,[_mid])
+        if op.type == 13:
+            if K18mid in op.param3:
+                if DZwait["autoJoin"] == True:
+                    if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
+                        k18.acceptGroupInvitation(op.param1)
+                        anu = k18.getContact(op.param2)
+                        k18.leaveGroup(op.param1)
+                    else:
+                        k18.acceptGroupInvitation(op.param1)
+                        group = k18.getGroup(op.param1)
+                        gMembMids = [contact.mid for contact in group.members]
+                        for _mid in gMembMids:
+                          if _mid in wait["blacklist"]:
+                            k18.kickoutFromGroup(op.param1,[_mid])
+        if op.type == 13:
+            if K19mid in op.param3:
+                if DZwait["autoJoin"] == True:
+                    if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
+                        k19.acceptGroupInvitation(op.param1)
+                        anu = k19.getContact(op.param2)
+                        k19.leaveGroup(op.param1)
+                    else:
+                        k19.acceptGroupInvitation(op.param1)
+                        group = k19.getGroup(op.param1)
+                        gMembMids = [contact.mid for contact in group.members]
+                        for _mid in gMembMids:
+                          if _mid in wait["blacklist"]:
+                            k19.kickoutFromGroup(op.param1,[_mid])
+        if op.type == 13:
+            if K20mid in op.param3:
+                if DZwait["autoJoin"] == True:
+                    if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
+                        k20.acceptGroupInvitation(op.param1)
+                        anu = k20.getContact(op.param2)
+                        k20.leaveGroup(op.param1)
+                    else:
+                        k20.acceptGroupInvitation(op.param1)
+                        group = k20.getGroup(op.param1)
+                        gMembMids = [contact.mid for contact in group.members]
+                        for _mid in gMembMids:
+                          if _mid in wait["blacklist"]:
+                            k20.kickoutFromGroup(op.param1,[_mid])
+        if op.type == 13:
+            if K21mid in op.param3:
+                if DZwait["autoJoin"] == True:
+                    if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
+                        k21.acceptGroupInvitation(op.param1)
+                        anu = k21.getContact(op.param2)
+                        k21.leaveGroup(op.param1)
+                    else:
+                        k21.acceptGroupInvitation(op.param1)
+                        group = k21.getGroup(op.param1)
+                        gMembMids = [contact.mid for contact in group.members]
+                        for _mid in gMembMids:
+                          if _mid in wait["blacklist"]:
+                            k21.kickoutFromGroup(op.param1,[_mid])
         if op.type == 13:
             if op.param1 in protectinvite:
                 if op.param2 in TEAM or op.param2 in DZbot["Bots"] or op.param2 in DZbot["admin"]:
@@ -4587,7 +4722,7 @@ def bot(op):
                             if msg._from in ownerbot:
                                try:
                                    cl.removeAllMessages(op.param2)
-                                   cl.sendMessage(msg.to,"Berhasil bersihkan semua pesan ")
+                                   cl.sendMessage(msg.to,"bersihkan semua pesan ")
                                except:
                                    pass
 
@@ -4617,6 +4752,24 @@ def bot(op):
                                    k11.sendMessage(msg.to,"Bersih ")
                                    k12.removeAllMessages(op.param2)
                                    k12.sendMessage(msg.to,"Bersih ")
+                                   k13.removeAllMessages(op.param2)
+                                   k13.sendMessage(msg.to,"Bersih ")
+                                   k14.removeAllMessages(op.param2)
+                                   k14.sendMessage(msg.to,"Bersih ")
+                                   k15.removeAllMessages(op.param2)
+                                   k15.sendMessage(msg.to,"Bersih ")
+                                   k16.removeAllMessages(op.param2)
+                                   k16.sendMessage(msg.to,"Bersih ")
+                                   k17.removeAllMessages(op.param2)
+                                   k17.sendMessage(msg.to,"Bersih ")
+                                   k18.removeAllMessages(op.param2)
+                                   k18.sendMessage(msg.to,"Bersih ")
+                                   k19.removeAllMessages(op.param2)
+                                   k19.sendMessage(msg.to,"Bersih ")
+                                   k20.removeAllMessages(op.param2)
+                                   k20.sendMessage(msg.to,"Bersih ")
+                                   k21.removeAllMessages(op.param2)
+                                   k21.sendMessage(msg.to,"Bersih ")
                                    cl.removeAllMessages(op.param2)
                                    cl.sendMessage(msg.to,"Bersih ")
                                except:
@@ -4642,12 +4795,30 @@ def bot(op):
                                    k11.sendMessage(msg.to,"Bersih ")
                                    k12.removeAllMessages(op.param2)
                                    k12.sendMessage(msg.to,"Bersih ")
+                                   k13.removeAllMessages(op.param2)
+                                   k13.sendMessage(msg.to,"Bersih ")
+                                   k14.removeAllMessages(op.param2)
+                                   k14.sendMessage(msg.to,"Bersih ")
+                                   k15.removeAllMessages(op.param2)
+                                   k15.sendMessage(msg.to,"Bersih ")
+                                   k16.removeAllMessages(op.param2)
+                                   k16.sendMessage(msg.to,"Bersih ")
+                                   k17.removeAllMessages(op.param2)
+                                   k17.sendMessage(msg.to,"Bersih ")
+                                   k18.removeAllMessages(op.param2)
+                                   k18.sendMessage(msg.to,"Bersih ")
+                                   k19.removeAllMessages(op.param2)
+                                   k19.sendMessage(msg.to,"Bersih ")
+                                   k20.removeAllMessages(op.param2)
+                                   k20.sendMessage(msg.to,"Bersih ")
+                                   k21.removeAllMessages(op.param2)
+                                   k21.sendMessage(msg.to,"Bersih ")
                                    cl.removeAllMessages(op.param2)
                                    cl.sendMessage(msg.to,"Bersih ")
                         elif cmd == 'mid':
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
-                              cl.sendMessage(msg.to,mid+'","'+Amid+'","'+Bmid+'","'+Cmid+'","'+Dmid+'","'+Emid+'","'+Fmid)
+                              cl.sendMessage(msg.to,mid)
                         elif cmd == "token":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
@@ -4663,7 +4834,16 @@ def bot(op):
                                k10.sendMessage(msg.to,"threading.Thread(target=login, args=('d','"+k10.authToken+"')).start()")
                                k11.sendMessage(msg.to,"threading.Thread(target=login, args=('e','"+k11.authToken+"')).start()")
                                k12.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+k12.authToken+"')).start()")
-                        elif cmd == ".speed" or cmd == "sp":
+                               k13.sendMessage(msg.to,"threading.Thread(target=login, args=('c','"+k13.authToken+"')).start()")
+                               k14.sendMessage(msg.to,"threading.Thread(target=login, args=('d','"+k14.authToken+"')).start()")
+                               k15.sendMessage(msg.to,"threading.Thread(target=login, args=('e','"+k15.authToken+"')).start()")
+                               k16.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+k16.authToken+"')).start()")
+                               k17.sendMessage(msg.to,"threading.Thread(target=login, args=('b','"+k17.authToken+"')).start()")
+                               k18.sendMessage(msg.to,"threading.Thread(target=login, args=('c','"+k18.authToken+"')).start()")
+                               k19.sendMessage(msg.to,"threading.Thread(target=login, args=('d','"+k19.authToken+"')).start()")
+                               k20.sendMessage(msg.to,"threading.Thread(target=login, args=('e','"+k20.authToken+"')).start()")
+                               k21.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+k21.authToken+"')).start()")
+                        elif cmd == "speed" or cmd == "sp":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                start = time.time()
@@ -4681,6 +4861,15 @@ def bot(op):
                                k10.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                k11.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                k12.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               k13.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               k14.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               k15.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               k16.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               k17.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               k18.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               k19.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               k20.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               k21.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                
                         elif cmd == "รี":
                           if DZwait["selfbot"] == True:
@@ -4824,12 +5013,21 @@ def bot(op):
                                 k10.sendMessage(msg.to,"อยู่ค่ะเจ้านาย..")
                                 k11.sendMessage(msg.to,"อยู่ค่ะเจ้านาย..")
                                 k12.sendMessage(msg.to,"อยู่ค่ะเจ้านาย..")
+                                k13.sendMessage(msg.to,"อยู่ค่ะเจ้านาย..")
+                                k14.sendMessage(msg.to,"อยู่ค่ะเจ้านาย..")
+                                k15.sendMessage(msg.to,"อยู่ค่ะเจ้านาย..")
+                                k16.sendMessage(msg.to,"อยู่ค่ะเจ้านาย..")
+                                k17.sendMessage(msg.to,"อยู่ค่ะเจ้านาย..")
+                                k18.sendMessage(msg.to,"อยู่ค่ะเจ้านาย..")
+                                k19.sendMessage(msg.to,"อยู่ค่ะเจ้านาย..")
+                                k20.sendMessage(msg.to,"อยู่ค่ะเจ้านาย..")
+                                k21.sendMessage(msg.to,"อยู่ค่ะเจ้านาย..")
 
                         elif cmd == "iv":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 try:
-                                    kicker = [Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Kmid]
+                                    kicker = [Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Kmid,K13mid,K14mid,K15mid,K16mid,K17mid,K18mid,K19mid,K20mid,K21mid]
                                     cl.inviteIntoGroup(msg.to, kicker)
                                     ka.acceptGroupInvitation(msg.to)
                                     kb.acceptGroupInvitation(msg.to)
@@ -4842,6 +5040,15 @@ def bot(op):
                                     k10.acceptGroupInvitation(msg.to)
                                     k11.acceptGroupInvitation(msg.to)
                                     k12.acceptGroupInvitation(msg.to)
+                                    k13.acceptGroupInvitation(msg.to)
+                                    k14.acceptGroupInvitation(msg.to)
+                                    k15.acceptGroupInvitation(msg.to)
+                                    k16.acceptGroupInvitation(msg.to)
+                                    k17.acceptGroupInvitation(msg.to)
+                                    k18.acceptGroupInvitation(msg.to)
+                                    k19.acceptGroupInvitation(msg.to)
+                                    k20.acceptGroupInvitation(msg.to)
+                                    k21.acceptGroupInvitation(msg.to)
                                 except:
                                     pass
 
@@ -4865,6 +5072,15 @@ def bot(op):
                                 k10.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 k11.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 k12.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                k13.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                k14.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                k15.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                k16.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                k17.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                k18.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                k19.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                k20.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                k21.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 kicker = [JSmid]
                                 cl.inviteIntoGroup(msg.to, kicker)
                                 
@@ -4874,17 +5090,26 @@ def bot(op):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
+                                ka.leaveGroup(msg.to)
                                 kb.leaveGroup(msg.to)
                                 kc.leaveGroup(msg.to)
                                 kd.leaveGroup(msg.to)
                                 ke.leaveGroup(msg.to)
-                                ka.leaveGroup(msg.to)
                                 kf.leaveGroup(msg.to)
                                 k8.leaveGroup(msg.to)
                                 k9.leaveGroup(msg.to)
                                 k10.leaveGroup(msg.to)
                                 k11.leaveGroup(msg.to)
                                 k12.leaveGroup(msg.to)
+                                k13.leaveGroup(msg.to)
+                                k14.leaveGroup(msg.to)
+                                k15.leaveGroup(msg.to)
+                                k16.leaveGroup(msg.to)
+                                k17.leaveGroup(msg.to)
+                                k18.leaveGroup(msg.to)
+                                k19.leaveGroup(msg.to)
+                                k20.leaveGroup(msg.to)
+                                k21.leaveGroup(msg.to)
                                 cl.leaveGroup(msg.to)
 
                         elif cmd == "bye":
@@ -5098,7 +5323,7 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("Bk12 " in msg.text):
+                        elif ("Bk10 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -5109,11 +5334,11 @@ def bot(op):
                                for target in targets:
                                    if target not in Bots:
                                        try:
-                                           k12.kickoutFromGroup(msg.to, [target])
+                                           k10.kickoutFromGroup(msg.to, [target])
                                        except:
                                            pass
                                            
-                        elif ("Bk4 " in msg.text):
+                        elif ("Bk20 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -5124,7 +5349,7 @@ def bot(op):
                                for target in targets:
                                    if target not in TEAM:
                                        try:
-                                           kc.kickoutFromGroup(msg.to, [target])
+                                           k20.kickoutFromGroup(msg.to, [target])
                                        except:
                                            pass
 
@@ -5196,10 +5421,10 @@ def bot(op):
                               if DZbot["Bots"] == {}:
                                 cl.sendMessage(to,"💞💞💞💞")
                               else:
-                                  mc = "   •••LIST ALL BOTS•••"
+                                  mc = "   •••LIST BOTS•••"
                                   for mi_d in DZbot["Bots"]:
                                       mc += "\n• "+cl.getContact(mi_d).displayName
-                                  cl.sendMessage(msg.to,mc + "\n   ••• TEAM BOT PROTECT •••")
+                                  cl.sendMessage(msg.to,mc + "\n   ••• BOT •••")
                      
                         elif cmd == "clear bot" or text.lower() == 'clear bot':
                           if DZwait["selfbot"] == True:
@@ -5469,6 +5694,87 @@ def bot(op):
                                if has1 == "OK":sil1 = "⭕"
                                else:sil1 = "⛔"
                                k12.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))
+                               try:k13.inviteIntoGroup(to, [K13mid]);has = "OK"
+                               except:has = "NOT"
+                               try:k13.kickoutFromGroup(to, [K13mid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "⭕"
+                               else:sil = "⛔"
+                               if has1 == "OK":sil1 = "⭕"
+                               else:sil1 = "⛔"
+                               k13.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))
+                               try:k14.inviteIntoGroup(to, [K14mid]);has = "OK"
+                               except:has = "NOT"
+                               try:k14.kickoutFromGroup(to, [K14mid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "⭕"
+                               else:sil = "⛔"
+                               if has1 == "OK":sil1 = "⭕"
+                               else:sil1 = "⛔"
+                               k14.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))
+                               try:k15.inviteIntoGroup(to, [K15mid]);has = "OK"
+                               except:has = "NOT"
+                               try:k15.kickoutFromGroup(to, [K15mid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "⭕"
+                               else:sil = "⛔"
+                               if has1 == "OK":sil1 = "⭕"
+                               else:sil1 = "⛔"
+                               k15.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))
+                               try:k16.inviteIntoGroup(to, [K16mid]);has = "OK"
+                               except:has = "NOT"
+                               try:k16.kickoutFromGroup(to, [K16mid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "⭕"
+                               else:sil = "⛔"
+                               if has1 == "OK":sil1 = "⭕"
+                               else:sil1 = "⛔"
+                               k16.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))
+                               try:k17.inviteIntoGroup(to, [K17mid]);has = "OK"
+                               except:has = "NOT"
+                               try:k17.kickoutFromGroup(to, [K17mid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "⭕"
+                               else:sil = "⛔"
+                               if has1 == "OK":sil1 = "⭕"
+                               else:sil1 = "⛔"
+                               k17.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))
+                               try:k18.inviteIntoGroup(to, [K18mid]);has = "OK"
+                               except:has = "NOT"
+                               try:k18.kickoutFromGroup(to, [K18mid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "⭕"
+                               else:sil = "⛔"
+                               if has1 == "OK":sil1 = "⭕"
+                               else:sil1 = "⛔"
+                               k18.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))
+                               try:k19.inviteIntoGroup(to, [K19mid]);has = "OK"
+                               except:has = "NOT"
+                               try:k19.kickoutFromGroup(to, [K19mid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "⭕"
+                               else:sil = "⛔"
+                               if has1 == "OK":sil1 = "⭕"
+                               else:sil1 = "⛔"
+                               k19.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))
+                               try:k20.inviteIntoGroup(to, [K20mid]);has = "OK"
+                               except:has = "NOT"
+                               try:k20.kickoutFromGroup(to, [K20mid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "⭕"
+                               else:sil = "⛔"
+                               if has1 == "OK":sil1 = "⭕"
+                               else:sil1 = "⛔"
+                               k20.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))
+                               try:k21.inviteIntoGroup(to, [K21mid]);has = "OK"
+                               except:has = "NOT"
+                               try:k21.kickoutFromGroup(to, [K21mid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "⭕"
+                               else:sil = "⛔"
+                               if has1 == "OK":sil1 = "⭕"
+                               else:sil1 = "⛔"
+                               k21.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))
 #===========JOIN TICKET============#
                         elif "/ti/g/" in msg.text.lower():
                           if DZwait["selfbot"] == True:
@@ -5485,7 +5791,7 @@ def bot(op):
                                      cl.acceptGroupInvitationByTicket(group.id,ticket_id)
                                      cl.sendMessage(msg.to, "succes join : %s" % str(group.name))
 #===========KICKALL VIA BOT============#
-                        elif ("Bubar" in msg.text):
+                        elif ("/บิน" in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                if msg.toType == 2:
@@ -5496,7 +5802,7 @@ def bot(op):
                                           if x not in DZbot["Bots"]:
                                               if x not in DZbot["admin"]:
                                                   try:
-                                                      klist=[ka,kb,kc,kd,ke]
+                                                      klist=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
                                                       kicker=random.choice(klist)
                                                       kicker.kickoutFromGroup(msg.to,[x])
                                                   except:
