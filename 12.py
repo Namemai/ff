@@ -304,17 +304,6 @@ def restartBot():
     python = sys.executable
     os.execl(python, python, *sys.argv)
 
-def waktu(secs):
-    mins, secs = divmod(secs,60)
-    hours, mins = divmod(mins,60)
-    days, hours = divmod(hours, 24)
-    return '%02d Hari %02d Jam %02d Menit %02d Detik' % (days, hours, mins, secs)
-
-def runtime(secs):
-    mins, secs = divmod(secs,60)
-    hours, mins = divmod(mins,60)
-    days, hours = divmod(hours, 24)
-    return '%02d Hari %02d Jam %02d Menit %02d Detik' % (days, hours, mins, secs)
 
 def sendMessage(to, Message, contentMetadata={}, contentType=0):
     mes = Message()
