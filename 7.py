@@ -2177,7 +2177,7 @@ def bot(op):
                                 ke.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 kf.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 kicker = [JSmid]
-                                cl.inviteIntoGroup(msg.to, kicker)
+                                kf.inviteIntoGroup(msg.to, kicker)
                                 
                                 
 
