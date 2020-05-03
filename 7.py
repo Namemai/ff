@@ -1994,13 +1994,13 @@ def bot(op):
                                start = time.time()
                                cl.sendMessage(msg.to, "Tes kecepatan bots")
                                elapsed_time = time.time() - start
-                               cl.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
-                               ka.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
-                               kb.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
-                               kc.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
-                               kd.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
-                               ke.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
-                               kf.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
+                               cl.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               ka.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               kb.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               kc.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               kd.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               ke.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+                               kf.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                
                         elif cmd == "รี":
                           if DZwait["selfbot"] == True:
