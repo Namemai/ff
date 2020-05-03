@@ -27,27 +27,28 @@ Bot_startTime = time.strftime("%H:%M:%S", time.localtime())
 print("""
 \033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Start Bot ]\033[0m    
 """%(Bot_startTime))
+#========================Token1===================================================#
 cl = LINE("tlm27566@bcaoo.com","mai065558mai")
 cl.log("Auth Token : " + str(cl.authToken))
 channelToken = cl.getChannelResult()
-#========================Token1===================================================#
+#========================Token2===================================================#
 ka = LINE("hbp07791@eoopy.com","mai065558mai")
 ka.log("Auth Token : " + str(ka.authToken))
 channelToken = ka.getChannelResult()
-#========================Token2===================================================#
-kb = LINE("hbp07791@eoopy.com","mai065558mai")
+#========================Token3===================================================#
+kb = LINE("qii76359@bcaoo.com","mai065558mai")
 kb.log("Auth Token : " + str(kb.authToken))
 channelToken = kb.getChannelResult()
-#========================Token3===================================================#
-kc = LINE("oqt64130@eoopy.com","mai065558mai")
+#========================Token4===================================================#
+kc = LINE("axz83700@eoopy.com","mai065558mai")
 kc.log("Auth Token : " + str(kc.authToken))
 channelToken = kc.getChannelResult()
-#========================Token4===================================================#
-kd = LINE("ago06104@zzrgg.com","mai065558mai")
+#========================Token5===================================================#
+kd = LINE("bsx99927@zzrgg.com","mai065558mai")
 kd.log("Auth Token : " + str(kd.authToken))
 channelToken = kd.getChannelResult()
-#========================Token5===================================================#
-ke = LINE("vsz71687@eoopy.com","mai065558mai")
+#========================Token6===================================================#
+ke = LINE("gcu89366@zzrgg.com","mai065558mai")
 ke.log("Auth Token : " + str(ke.authToken))
 channelToken = ke.getChannelResult()
 #==============•••••••••••••••••   BOT WAR V`1 BY TEAM BOT PROTECT •••••••••••••••==============#
