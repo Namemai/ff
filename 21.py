@@ -112,7 +112,7 @@ k21 = LINE("uyh94815@eoopy.com","N0891554508")
 k21.log("Auth Token : " + str(k21.authToken))
 channelToken = k21.getChannelResult()
 #========================[21]===================================================#
-ajs = LINE("qxx20300@eoopy.com","N0891554508")
+ajs = LINE("dpi95011@eoopy.com","N0891554508")
 ajs.log("Auth Token : " + str(kf.authToken))
 channelToken = ajs.getChannelResult()
 #==============•••••••••••••••••   BOT WAR V`1 BY TEAM BOT PROTECT •••••••••••••••==============#
