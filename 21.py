@@ -28,91 +28,91 @@ print("""
 \033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Start Bot ]\033[0m    
 """%(Bot_startTime))
 
-cl = LINE("ytv47663@bcaoo.com","mai065558mai")
+cl = LINE("noompaisol8023@gmail.com","N0891554508")
 cl.log("Auth Token : " + str(cl.authToken))
 channelToken = cl.getChannelResult()
 #========================Token1===================================================#
-ka = LINE("tlm27566@bcaoo.com","mai065558mai")
+ka = LINE("vst47881@eoopy.com","N0891554508")
 ka.log("Auth Token : " + str(ka.authToken))
 channelToken = ka.getChannelResult()
 #========================Token2===================================================#
-kb = LINE("hbp07791@eoopy.com","mai065558mai")
+kb = LINE("yfv00900@zzrgg.com","N0891554508")
 kb.log("Auth Token : " + str(kb.authToken))
 channelToken = kb.getChannelResult()
 #========================Token3===================================================#
-kc = LINE("oqt64130@eoopy.com","mai065558mai")
+kc = LINE("tsk68960@eoopy.com","N0891554508")
 kc.log("Auth Token : " + str(kc.authToken))
 channelToken = kc.getChannelResult()
 #========================Token4===================================================#
-kd = LINE("ago06104@zzrgg.com","mai065558mai")
+kd = LINE("gkl87129@eoopy.com","N0891554508")
 kd.log("Auth Token : " + str(kd.authToken))
 channelToken = kd.getChannelResult()
 #========================Token5===================================================#
-ke = LINE("vsz71687@eoopy.com","mai065558mai")
+ke = LINE("iou85385@eoopy.com","N0891554508")
 ke.log("Auth Token : " + str(ke.authToken))
 channelToken = ke.getChannelResult()
 #========================Token6===================================================#
-kf = LINE("yel10184@bcaoo.com","mai065558mai")
+kf = LINE("pbh40458@eoopy.com","N0891554508")
 kf.log("Auth Token : " + str(kf.authToken))
 channelToken = kf.getChannelResult()
 #============================[7]===============================================#
-k8 = LINE("qij17520@zzrgg.com","mai065558mai")
+k8 = LINE("fgj90510@eoopy.com","N0891554508")
 k8.log("Auth Token : " + str(k8.authToken))
 channelToken = k8.getChannelResult()
 #============================[8]===============================================#
-k9 = LINE("ldf56885@eoopy.com","mai065558mai")
+k9 = LINE("azn03676@bcaoo.com","N0891554508")
 k9.log("Auth Token : " + str(k9.authToken))
 channelToken = k9.getChannelResult()
 #============================[9]===============================================#
-k10 = LINE("qii76359@bcaoo.com","mai065558mai")
+k10 = LINE("gpc94087@eoopy.com","N0891554508")
 k10.log("Auth Token : " + str(k10.authToken))
 channelToken = k10.getChannelResult()
 #==============================[10]=============================================#
-k11 = LINE("xvx65670@bcaoo.com","mai065558mai")
+k11 = LINE("mtb84131@bcaoo.com","N0891554508")
 k11.log("Auth Token : " + str(k11.authToken))
 channelToken = k11.getChannelResult()
 #============================[11]===============================================#
-k12 = LINE("axz83700@eoopy.com","mai065558mai")
+k12 = LINE("yxn56604@eoopy.com","N0891554508")
 k12.log("Auth Token : " + str(k12.authToken))
 channelToken = k12.getChannelResult()
 #==============================[12]=============================================#
-k13 = LINE("axz83700@eoopy.com","mai065558mai")
+k13 = LINE("tpi44390@bcaoo.com","N0891554508")
 k13.log("Auth Token : " + str(k13.authToken))
 channelToken = k13.getChannelResult()
 #=============================[13]==============================================#
-k14 = LINE("axz83700@eoopy.com","mai065558mai")
+k14 = LINE("jsu02172@eoopy.com","N0891554508")
 k14.log("Auth Token : " + str(k14.authToken))
 channelToken = k14.getChannelResult()
 #==============================[14]=============================================#
-k15 = LINE("axz83700@eoopy.com","mai065558mai")
+k15 = LINE("cpc83081@bcaoo.com","N0891554508")
 k15.log("Auth Token : " + str(k15.authToken))
 channelToken = k15.getChannelResult()
 #============================[15]===============================================#
-k16 = LINE("axz83700@eoopy.com","mai065558mai")
+k16 = LINE("ysk03072@zzrgg.com","N0891554508")
 k16.log("Auth Token : " + str(k16.authToken))
 channelToken = k16.getChannelResult()
 #==============================[16]=============================================#
-k17 = LINE("axz83700@eoopy.com","mai065558mai")
+k17 = LINE("mcm58422@zzrgg.com","N0891554508")
 k17.log("Auth Token : " + str(k17.authToken))
 channelToken = k17.getChannelResult()
 #=============================[17]==============================================#
-k18 = LINE("axz83700@eoopy.com","mai065558mai")
+k18 = LINE("jms27324@bcaoo.com","N0891554508")
 k18.log("Auth Token : " + str(k18.authToken))
 channelToken = k18.getChannelResult()
 #=============================[18]==============================================#
-k19 = LINE("axz83700@eoopy.com","mai065558mai")
+k19 = LINE("lls26302@bcaoo.com","N0891554508")
 k19.log("Auth Token : " + str(k19.authToken))
 channelToken = k19.getChannelResult()
 #==============================[19]=============================================#
-k20 = LINE("axz83700@eoopy.com","mai065558mai")
+k20 = LINE("oog21277@bcaoo.com","N0891554508")
 k20.log("Auth Token : " + str(k20.authToken))
 channelToken = k20.getChannelResult()
 #===========================[20]================================================#
-k21 = LINE("axz83700@eoopy.com","mai065558mai")
+k21 = LINE("uhg11187@eoopy.com","N0891554508")
 k21.log("Auth Token : " + str(k21.authToken))
 channelToken = k21.getChannelResult()
 #========================[21]===================================================#
-ajs = LINE("bsx99927@zzrgg.com","mai065558mai")
+ajs = LINE("uyh94815@eoopy.com","N0891554508")
 ajs.log("Auth Token : " + str(kf.authToken))
 channelToken = ajs.getChannelResult()
 #==============•••••••••••••••••   BOT WAR V`1 BY TEAM BOT PROTECT •••••••••••••••==============#
@@ -202,7 +202,6 @@ call = cl
 oepoll = OEPoll(cl)
 team1=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
 team2=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
-team3=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
 mid = cl.getProfile().mid
 Amid = ka.getProfile().mid
 Bmid = kb.getProfile().mid
