@@ -50,6 +50,14 @@ channelToken = kd.getChannelResult()
 ke = LINE("gcu89366@zzrgg.com","mai065558mai")
 ke.log("Auth Token : " + str(ke.authToken))
 channelToken = ke.getChannelResult()
+#========================Token5===================================================#
+#kf = LINE("bsx99927@zzrgg.com","mai065558mai")
+#kf.log("Auth Token : " + str(kf.authToken))
+#channelToken = kf.getChannelResult()
+#========================Token6===================================================#
+#ajs = LINE("gcu89366@zzrgg.com","mai065558mai")
+#ajs.log("Auth Token : " + str(ajs.authToken))
+#channelToken = ajs.getChannelResult()
 #==============•••••••••••••••••   BOT WAR V`1 BY TEAM BOT PROTECT •••••••••••••••==============#
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m
 
