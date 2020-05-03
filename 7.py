@@ -730,13 +730,13 @@ def bot(op):
                             G.preventedJoinByTicket = False
                             ajs.updateGroup(G)
                             Ticket = ajs.reissueGroupTicket(op.param1)
+                            cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                             ka.acceptGroupInvitationByTicket(op.param1,Ticket)
                             kb.acceptGroupInvitationByTicket(op.param1,Ticket)
                             kc.acceptGroupInvitationByTicket(op.param1,Ticket)	
                             kd.acceptGroupInvitationByTicket(op.param1,Ticket)
                             ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                            kf.acceptGroupInvitationByTicket(op.param1,Ticket)
-                            cl.acceptGroupInvitationByTicket(op.param1,Ticket)	                            
+                            kf.acceptGroupInvitationByTicket(op.param1,Ticket)	                            
                             wait["blacklist"][op.param2] = True
                             ajs.leaveGroup(op.param1)
                             cl.inviteIntoGroup(op.param1,[JSmid])
@@ -756,13 +756,13 @@ def bot(op):
                             G.preventedJoinByTicket = False
                             ajs.updateGroup(G)
                             Ticket = ajs.reissueGroupTicket(op.param1)
+                            cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                             ka.acceptGroupInvitationByTicket(op.param1,Ticket)
                             kb.acceptGroupInvitationByTicket(op.param1,Ticket)
                             kc.acceptGroupInvitationByTicket(op.param1,Ticket)	
                             kd.acceptGroupInvitationByTicket(op.param1,Ticket)
                             ke.acceptGroupInvitationByTicket(op.param1,Ticket)
-                            kf.acceptGroupInvitationByTicket(op.param1,Ticket)
-                            cl.acceptGroupInvitationByTicket(op.param1,Ticket)	                            
+                            kf.acceptGroupInvitationByTicket(op.param1,Ticket)	                            
                             wait["blacklist"][op.param2] = True
                             ajs.leaveGroup(op.param1)
                             cl.inviteIntoGroup(op.param1,[JSmid])
@@ -1951,7 +1951,7 @@ def bot(op):
                                except:
                                    pass
 
-                        elif text.lower() == "hapuschat":
+                        elif text.lower() == "ลบแชทคิก":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                try:
@@ -1967,6 +1967,8 @@ def bot(op):
                                    ke.sendMessage(msg.to,"Bersih ")
                                    kf.removeAllMessages(op.param2)
                                    kf.sendMessage(msg.to,"Bersih ")
+                                   cl.removeAllMessages(op.param2)
+                                   cl.sendMessage(msg.to,"Bersih ")
                                except:
                                    ka.removeAllMessages(op.param2)
                                    ka.sendMessage(msg.to,"Bersih ")
@@ -1980,6 +1982,8 @@ def bot(op):
                                    ke.sendMessage(msg.to,"Bersih ")
                                    kf.removeAllMessages(op.param2)
                                    kf.sendMessage(msg.to,"Bersih ")
+                                   cl.removeAllMessages(op.param2)
+                                   cl.sendMessage(msg.to,"Bersih ")
                         elif cmd == 'mid':
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
@@ -2359,7 +2363,22 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("Kick2 " in msg.text):
+                        elif ("Bk1 " in msg.text):
+                          if DZwait["selfbot"] == True:
+                            if msg._from in ownerbot:
+                               key = eval(msg.contentMetadata["MENTION"])
+                               key["MENTIONEES"][0]["M"]
+                               targets = []
+                               for x in key["MENTIONEES"]:
+                                    targets.append(x["M"])
+                               for target in targets:
+                                   if target not in TEAM:
+                                       try:
+                                           cl.kickoutFromGroup(msg.to, [target])
+                                       except:
+                                           pass
+
+                        elif ("Bk2 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -2374,7 +2393,7 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("Kick3 " in msg.text):
+                        elif ("Bk3 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -2389,7 +2408,7 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("Kick4 " in msg.text):
+                        elif ("Bk4 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -2404,7 +2423,7 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("Kick5 " in msg.text):
+                        elif ("Bk5 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -2415,12 +2434,11 @@ def bot(op):
                                for target in targets:
                                    if target not in Bots:
                                        try:
-                                           cl.sendMessage(msg.to, "Im sorry i kick out from group 😡")
-                                           random.choice(team2).kickoutFromGroup(msg.to, [target])
+                                           kd.kickoutFromGroup(msg.to, [target])
                                        except:
                                            pass
                                            
-                        elif ("Kick6 " in msg.text):
+                        elif ("Bk6 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -2431,7 +2449,22 @@ def bot(op):
                                for target in targets:
                                    if target not in TEAM:
                                        try:
-                                           cl.kickoutFromGroup(msg.to, [target])
+                                           ke.kickoutFromGroup(msg.to, [target])
+                                       except:
+                                           pass
+
+                        elif ("Bk7 " in msg.text):
+                          if DZwait["selfbot"] == True:
+                            if msg._from in ownerbot:
+                               key = eval(msg.contentMetadata["MENTION"])
+                               key["MENTIONEES"][0]["M"]
+                               targets = []
+                               for x in key["MENTIONEES"]:
+                                    targets.append(x["M"])
+                               for target in targets:
+                                   if target not in TEAM:
+                                       try:
+                                           kf.kickoutFromGroup(msg.to, [target])
                                        except:
                                            pass
 
@@ -2543,7 +2576,7 @@ def bot(op):
                           if msg._from in ownerbot or msg._from in DHENZA:
                             if msg._from in ownerbot:
                               ang = cl.getContacts(wait["blacklist"])
-                              mc = "%i Korban " % len(ang)
+                              mc = "%i ban " % len(ang)
                               cl.sendMessage(msg.to,"Berhasil bersihkan daftar blacklist " +mc)
                               wait["blacklist"] = {}
                               
