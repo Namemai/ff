@@ -200,8 +200,8 @@ print ("Proses login sucsess")
 
 call = cl
 oepoll = OEPoll(cl)
-team1=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
-team2=[cl,ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team1=[ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
+team2=[ka,kb,kc,kd,ke,kf,k8,k9,k10,k11,k12,k13,k14,k15,k16,k17,k18,k19,k20,k21]
 mid = cl.getProfile().mid
 Amid = ka.getProfile().mid
 Bmid = kb.getProfile().mid
