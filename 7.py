@@ -928,10 +928,10 @@ def bot(op):
                                         kc.cancelGroupInvitation(op.param1,[op.param2])
                                     except:
                                         try:
-                                             random.choice(team4).kickoutFromGroup(op.param1,[op.param2])
-                                             random.choice(team4).inviteIntoGroup(op.param1,Bots)
+                                            random.choice(team4).kickoutFromGroup(op.param1,[op.param2])
+                                            random.choice(team4).inviteIntoGroup(op.param1,Bots)
                                             kb.acceptGroupInvitation(op.param1)
-                                             random.choice(team4).cancelGroupInvitation(op.param1,[op.param2])
+                                            random.choice(team4).cancelGroupInvitation(op.param1,[op.param2])
                                         except:
                                             random.choice(team4).kickoutFromGroup(op.param1,[op.param2])
                                             random.choice(team4).inviteIntoGroup(op.param1,Bots)
