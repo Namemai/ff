@@ -1938,7 +1938,6 @@ def bot(op):
                                start = time.time()
                                cl.sendMessage(msg.to, "สปีด")
                                elapsed_time = time.time() - start
-                               cl.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                ka.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                kb.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                kc.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
