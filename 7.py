@@ -31,31 +31,31 @@ cl = LINE("tlm27566@bcaoo.com","mai065558mai")
 cl.log("Auth Token : " + str(cl.authToken))
 channelToken = cl.getChannelResult()
 #========================Token1===================================================#
-ka = LINE("hbp07791@eoopy.com","mai065558mai")
+ka = LINE("yjy38072@bcaoo.com","mai065558mai")
 ka.log("Auth Token : " + str(ka.authToken))
 channelToken = ka.getChannelResult()
 #========================Token2===================================================#
-kb = LINE("qii76359@bcaoo.com","mai065558mai")
+kb = LINE("tcg34667@eoopy.com","mai065558mai")
 kb.log("Auth Token : " + str(kb.authToken))
 channelToken = kb.getChannelResult()
 #========================Token3===================================================#
-kc = LINE("axz83700@eoopy.com","mai065558mai")
+kc = LINE("pnm69511@zzrgg.com","mai065558mai")
 kc.log("Auth Token : " + str(kc.authToken))
 channelToken = kc.getChannelResult()
 #========================Token4===================================================#
-kd = LINE("bsx99927@zzrgg.com","mai065558mai")
+kd = LINE("lhd63523@zzrgg.com","mai065558mai")
 kd.log("Auth Token : " + str(kd.authToken))
 channelToken = kd.getChannelResult()
 #========================Token5===================================================#
-ke = LINE("gcu89366@zzrgg.com","mai065558mai")
+ke = LINE("jwl18517@zzrgg.com","mai065558mai")
 ke.log("Auth Token : " + str(ke.authToken))
 channelToken = ke.getChannelResult()
 #========================Token6===================================================#
-kf = LINE("tgw51564@eveav.com","mai065558mai")
+kf = LINE("ndk14959@bcaoo.com","mai065558mai")
 kf.log("Auth Token : " + str(kf.authToken))
 channelToken = kf.getChannelResult()
 #========================Tokenjs===================================================#
-ajs = LINE("nji37553@zzrgg.com","mai065558mai")
+ajs = LINE("hbp07791@eoopy.com","mai065558mai")
 ajs.log("Auth Token : " + str(kf.authToken))
 channelToken = ajs.getChannelResult()
 #==============•••••••••••••••••   BOT WAR V`1 BY TEAM BOT PROTECT •••••••••••••••==============#
