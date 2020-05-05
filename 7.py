@@ -47,7 +47,7 @@ kd = LINE("lhd63523@zzrgg.com","mai065558mai")
 kd.log("Auth Token : " + str(kd.authToken))
 channelToken = kd.getChannelResult()
 #========================Token5===================================================#
-ke = LINE("jwl18517@zzrgg.com","mai065558mai")
+ke = LINE("hbp07791@eoopy.com","mai065558mai")
 ke.log("Auth Token : " + str(ke.authToken))
 channelToken = ke.getChannelResult()
 #========================Token6===================================================#
@@ -55,7 +55,7 @@ kf = LINE("ndk14959@bcaoo.com","mai065558mai")
 kf.log("Auth Token : " + str(kf.authToken))
 channelToken = kf.getChannelResult()
 #========================Tokenjs===================================================#
-ajs = LINE("hbp07791@eoopy.com","mai065558mai")
+ajs = LINE("rtg70730@bcaoo.com","N0891554508")
 ajs.log("Auth Token : " + str(kf.authToken))
 channelToken = ajs.getChannelResult()
 #==============•••••••••••••••••   BOT WAR V`1 BY TEAM BOT PROTECT •••••••••••••••==============#
