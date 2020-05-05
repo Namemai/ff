@@ -2522,7 +2522,7 @@ def bot(op):
                             if msg._from in ownerbot:
                               ang = cl.getContacts(wait["blacklist"])
                               mc = "%i Korban " % len(ang)
-                              cl.sendMessage(msg.to,"Berhasil bersihkan daftar blacklist " +mc)
+                              cl.sendMessage(msg.to,"blacklist " +mc)
                               wait["blacklist"] = {}
                               
                         elif cmd == "js in":
