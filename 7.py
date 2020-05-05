@@ -35,7 +35,7 @@ ka = LINE("tgw51564@eveav.com","N0891554508")
 ka.log("Auth Token : " + str(ka.authToken))
 channelToken = ka.getChannelResult()
 #========================Token2===================================================#
-kb = LINE("tcg34667@eoopy.com","mai065558mai")
+kb = LINE("yje08610@eoopy.com","mai065558mai")
 kb.log("Auth Token : " + str(kb.authToken))
 channelToken = kb.getChannelResult()
 #========================Token3===================================================#
