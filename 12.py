@@ -3431,7 +3431,7 @@ def bot(op):
                               else:
                                   mc = "   List blacklist "
                                   for mi_d in wait["blacklist"]:
-                                      mc += "\n?? "+cl.getContact(mi_d).displayName
+                                      mc += "\n👉 "+cl.getContact(mi_d).displayName
                                   cl.sendMessage(msg.to,mc + "")
                       
                         elif cmd == "clearban" or text.lower() == 'cb':
