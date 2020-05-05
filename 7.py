@@ -2086,26 +2086,6 @@ def bot(op):
                                 kf.updateProfile(profile)
                                 kf.sendMessage(msg.to,"Succes " + string + "") 
 
-                        elif cmd == "พิม: ":
-                          if DZwait["selfbot"] == True:
-                            if msg._from in ownerbot:
-                               sep = text.split(" ")
-                               pesan = text.replace(sep[0] + " ","")
-                               saya = cl.getGroupIdsJoined()
-                               saya = ka.getGroupIdsJoined()
-                               saya = kb.getGroupIdsJoined()
-                               saya = kc.getGroupIdsJoined()
-                               saya = kd.getGroupIdsJoined()
-                               saya = ke.getGroupIdsJoined()
-                               saya = kf.getGroupIdsJoined()
-                               for group in saya:
-                                   cl.sendMessage(group,"\n" + str(pesan))
-                                   ka.sendMessage(group,"\n" + str(pesan))
-                                   kb.sendMessage(group,"\n" + str(pesan))
-                                   kc.sendMessage(group,"\n" + str(pesan))
-                                   kd.sendMessage(group,"\n" + str(pesan))
-                                   ke.sendMessage(group,"\n" + str(pesan))
-                                   kf.sendMessage(group,"\n" + str(pesan))
                         elif cmd == "มี":
                             if msg._from in ownerbot:
                               contact = cl.getContact(sender)
@@ -2169,7 +2149,6 @@ def bot(op):
                                 ke.leaveGroup(msg.to)
                                 ka.leaveGroup(msg.to)
                                 kf.leaveGroup(msg.to)
-                                cl.leaveGroup(msg.to)
 
                         elif cmd == "bye":
                           if DZwait["selfbot"] == True:
