@@ -213,12 +213,12 @@ warmode = []
 settings = {
     "groupgambar":False,
     "changegambar":False,
-    "modewar":False,
+    "modewar":True,
     "likeStat":True,
     "LikeOn":True,
     "Jscancel":True,
     "like":4,
-    "autoJoinTicket":False,
+    "autoJoinTicket":True,
     "keyCommand": "",
     "postingan":{},
     "Picture":False,
@@ -976,7 +976,7 @@ def bot(op):
                                     G = random.choice(team1).getGroup(op.param1)
                                     G.preventedJoinByTicket = False
                                     random.choice(team1).updateGroup(G)
-                                    Ticket = random.choice(team2).reissueGroupTicket(op.param1)
+                                    Ticket = random.choice(team1).reissueGroupTicket(op.param1)
                                     time.sleep(0.001)
                                     cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     ka.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -2668,44 +2668,77 @@ def bot(op):
                         if Amid in DZwait["foto"]:
                             path = ka.downloadObjectMsg(msg_id)
                             del DZwait["foto"][Amid]
-                            ka.updateProfilePicture(path)
+                            ka.updateProfilePicture(path1)
                             ka.sendMessage(msg.to,"Succes")
                         elif Bmid in DZwait["foto"]:
                             path = kb.downloadObjectMsg(msg_id)
                             del DZwait["foto"][Bmid]
-                            kb.updateProfilePicture(path)
+                            kb.updateProfilePicture(path2)
                             kb.sendMessage(msg.to,"Succes")
                         elif Cmid in DZwait["foto"]:
                             path = kc.downloadObjectMsg(msg_id)
                             del DZwait["foto"][Cmid]
-                            kc.updateProfilePicture(path)
+                            kc.updateProfilePicture(path3)
                             kc.sendMessage(msg.to,"Succes")
                         if Dmid in DZwait["foto"]:
                             path = kd.downloadObjectMsg(msg_id)
                             del DZwait["foto"][Dmid]
-                            kd.updateProfilePicture(path)
+                            kd.updateProfilePicture(path4)
                             kd.sendMessage(msg.to,"Succes")
                         if Emid in DZwait["foto"]:
                             path = ke.downloadObjectMsg(msg_id)
                             del DZwait["foto"][Emid]
-                            ke.updateProfilePicture(path)
+                            ke.updateProfilePicture(path5)
                             ke.sendMessage(msg.to,"Succes")
                         elif Fmid in DZwait["foto"]:
                             path = kf.downloadObjectMsg(msg_id)
                             del DZwait["foto"][Fmid]
-                            kf.updateProfilePicture(path)
+                            kf.updateProfilePicture(path6)
                             kf.sendMessage(msg.to,"Succes")
+                        elif Gmid in DZwait["foto"]:
+                            path = k8.downloadObjectMsg(msg_id)
+                            del DZwait["foto"][Fmid]
+                            k8.updateProfilePicture(path7)
+                            k8.sendMessage(msg.to,"Succes")
+                        elif Hmid in DZwait["foto"]:
+                            path = k9.downloadObjectMsg(msg_id)
+                            del DZwait["foto"][Fmid]
+                            k9.updateProfilePicture(path8)
+                            k9.sendMessage(msg.to,"Succes")
+                        elif Imid in DZwait["foto"]:
+                            path = k10.downloadObjectMsg(msg_id)
+                            del DZwait["foto"][Fmid]
+                            k10.updateProfilePicture(path9)
+                            k10.sendMessage(msg.to,"Succes")
+                        elif Jmid in DZwait["foto"]:
+                            path = k11.downloadObjectMsg(msg_id)
+                            del DZwait["foto"][Fmid]
+                            k11.updateProfilePicture(path10)
+                            k11.sendMessage(msg.to,"Succes")
+                        elif Kmid in DZwait["foto"]:
+                            path = k12.downloadObjectMsg(msg_id)
+                            del DZwait["foto"][Fmid]
+                            k12.updateProfilePicture(path11)
+                            k12.sendMessage(msg.to,"Succes")
 
                if msg.contentType == 1:
                  if msg._from in ownerbot:
                    if settings["changegambar"] == True:
+                     path = cl.downloadObjectMsg(msg_id)
                      path1 = ka.downloadObjectMsg(msg_id)
                      path2 = kb.downloadObjectMsg(msg_id)
                      path3 = kc.downloadObjectMsg(msg_id)
                      path4 = kd.downloadObjectMsg(msg_id)
                      path5 = ke.downloadObjectMsg(msg_id)
                      path6 = kf.downloadObjectMsg(msg_id)
+                     path7 = k8.downloadObjectMsg(msg_id)
+                     path8 = k9.downloadObjectMsg(msg_id)
+                     path9 = k10.downloadObjectMsg(msg_id)
+                     path10 = k11.downloadObjectMsg(msg_id)
+                     path11 = k12.downloadObjectMsg(msg_id)
                      settings["changegambar"] = False
+                     cl.updateProfilePicture(path1)
+                     cl.sendMessage(msg.to, "Succes Ubah pic 0")
                      ka.updateProfilePicture(path1)
                      ka.sendMessage(msg.to, "Succes Ubah pic 1")
                      kb.updateProfilePicture(path2)
@@ -2718,6 +2751,16 @@ def bot(op):
                      ke.sendMessage(msg.to, "Succes Ubah pic 5")
                      kf.updateProfilePicture(path6)
                      kf.sendMessage(msg.to, "Succes Ubah pic 6")
+                     k8.updateProfilePicture(path7)
+                     k8.sendMessage(msg.to, "Succes Ubah pic 2")
+                     k9.updateProfilePicture(path8)
+                     k9.sendMessage(msg.to, "Succes Ubab pic 3")
+                     k10.updateProfilePicture(path9)
+                     k10.sendMessage(msg.to, "Succes Ubah pic 4")
+                     k11.updateProfilePicture(path10)
+                     k11.sendMessage(msg.to, "Succes Ubah pic 5")
+                     k12.updateProfilePicture(path11)
+                     k12.sendMessage(msg.to, "Succes Ubah pic 6")
 
                if msg.contentType == 0:
                     if DZwait["autoRead"] == True:
@@ -2739,12 +2782,12 @@ def bot(op):
                         elif cmd == "mod on":
                             if msg._from in ownerbot:
                                 DZwait["talkban"] = True
-                                cl.sendMessage(msg.to, "war mode on in group")
+                                cl.sendMessage(msg.to, "mode on in group")
 
                         elif cmd == "mod off":
                             if msg._from in ownerbot:
                                 DZwait["talkban"] = False
-                                cl.sendMessage(msg.to, "war mode off in group")
+                                cl.sendMessage(msg.to, "mode off in group")
 
                         elif cmd == "autojoin on" or text.lower() == 'join on':
                           if DZwait["selfbot"] == True:
@@ -2778,7 +2821,7 @@ def bot(op):
                                 if msg.to in protectcancel: md+="Protect cancel : on\n"
                                 else: md+="Protect cancel : off\n"
                                 if msg.to in protectinvite: md+="Protect invite : on\n"
-                                else: md+="Protect invite : off\n\n••Setings all protecttion••"                   
+                                else: md+="Protect invite : off\n\n••Setings protect••"                   
                                 cl.sendMessage(msg.to, md)
                                 
                         elif cmd == "help":
@@ -2867,7 +2910,7 @@ def bot(op):
                                k10.sendMessage(msg.to,"threading.Thread(target=login, args=('d','"+k10.authToken+"')).start()")
                                k11.sendMessage(msg.to,"threading.Thread(target=login, args=('e','"+k11.authToken+"')).start()")
                                k12.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+k12.authToken+"')).start()")
-                        elif cmd == ".speed" or cmd == "sp":
+                        elif cmd == "speed" or cmd == "sp":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                start = time.time()
@@ -2891,16 +2934,23 @@ def bot(op):
                                cl.sendMessage(msg.to, "Proses rebooting.....")
                                DZwait["rePoint"] = msg.to
                                restartBot()
-                               cl.sendMessage(msg.to, "reboot all bots")                   
+                               cl.sendMessage(msg.to, "reboot all bots")
+
+                        elif cmd == "มี":
+                            if msg._from in ownerbot:
+                              contact = cl.getContact(sender)
+                              image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                              cl.sendMessage(msg.to, "Nama : "+str(contact.displayName))
+                              cl.sendMessage(msg.to, None,contentMetadata={'mid': sender}, contentType=13)
 #======================= Update Foto bots ====================#
-                        elif cmd == "upgrup":
+                        elif cmd == "upg":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                               if msg.toType == 2:
                                 settings["groupgambar"] = True
                                 cl.sendMessage(msg.to,"Silahkan Kirim fotonya")
 
-                        elif cmd == "clup":
+                        elif cmd == "up":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 settings["changegambar"] = True
@@ -3010,7 +3060,57 @@ def bot(op):
                                 profile = kf.getProfile()
                                 profile.displayName = string
                                 kf.updateProfile(profile)
-                                kf.sendMessage(msg.to,"Succes " + string + "") 
+                                kf.sendMessage(msg.to,"Succes " + string + "")
+
+                        elif cmd.startswith("7name: "):
+                          if msg._from in ownerbot:
+                            separate = msg.text.split(" ")
+                            string = msg.text.replace(separate[0] + " ","")
+                            if len(string) <= 10000000000:
+                                profile = k8.getProfile()
+                                profile.displayName = string
+                                k8.updateProfile(profile)
+                                k8.sendMessage(msg.to,"Succes " + string + "") 
+
+                        elif cmd.startswith("8name: "):
+                          if msg._from in ownerbot:
+                            separate = msg.text.split(" ")
+                            string = msg.text.replace(separate[0] + " ","")
+                            if len(string) <= 10000000000:
+                                profile = k9.getProfile()
+                                profile.displayName = string
+                                k9.updateProfile(profile)
+                                k9.sendMessage(msg.to,"Succes " + string + "") 
+
+                        elif cmd.startswith("9name: "):
+                          if msg._from in ownerbot:
+                            separate = msg.text.split(" ")
+                            string = msg.text.replace(separate[0] + " ","")
+                            if len(string) <= 10000000000:
+                                profile = k10.getProfile()
+                                profile.displayName = string
+                                k10.updateProfile(profile)
+                                k10.sendMessage(msg.to,"Succes " + string + "") 
+
+                        elif cmd.startswith("10name: "):
+                          if msg._from in ownerbot:
+                            separate = msg.text.split(" ")
+                            string = msg.text.replace(separate[0] + " ","")
+                            if len(string) <= 10000000000:
+                                profile = k11.getProfile()
+                                profile.displayName = string
+                                k11.updateProfile(profile)
+                                k11.sendMessage(msg.to,"Succes " + string + "") 
+
+                        elif cmd.startswith("11name: "):
+                          if msg._from in ownerbot:
+                            separate = msg.text.split(" ")
+                            string = msg.text.replace(separate[0] + " ","")
+                            if len(string) <= 10000000000:
+                                profile = k12.getProfile()
+                                profile.displayName = string
+                                k12.updateProfile(profile)
+                                k12.sendMessage(msg.to,"Succes " + string + "") 
                      
                         elif cmd == "b":
                           if DZwait["selfbot"] == True:
@@ -3087,7 +3187,6 @@ def bot(op):
                                 k10.leaveGroup(msg.to)
                                 k11.leaveGroup(msg.to)
                                 k12.leaveGroup(msg.to)
-                                cl.leaveGroup(msg.to)
 
                         elif cmd == "bye":
                           if DZwait["selfbot"] == True:
@@ -3255,7 +3354,7 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("Bk5 " in msg.text):
+                        elif ("Bk7 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -3266,11 +3365,11 @@ def bot(op):
                                for target in targets:
                                    if target not in TEAM:
                                        try:
-                                           ke.kickoutFromGroup(msg.to, [target])
+                                           k8.kickoutFromGroup(msg.to, [target])
                                        except:
                                            pass
 
-                        elif ("Bk2 " in msg.text):
+                        elif ("Bk8 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -3281,11 +3380,11 @@ def bot(op):
                                for target in targets:
                                    if target not in TEAM:
                                        try:
-                                           ka.kickoutFromGroup(msg.to, [target])
+                                           k9.kickoutFromGroup(msg.to, [target])
                                        except:
                                            pass
 
-                        elif ("Bk3 " in msg.text):
+                        elif ("Bk9 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -3296,11 +3395,11 @@ def bot(op):
                                for target in targets:
                                    if target not in TEAM:
                                        try:
-                                           kb.kickoutFromGroup(msg.to, [target])
+                                           k10.kickoutFromGroup(msg.to, [target])
                                        except:
                                            pass
 
-                        elif ("Bk12 " in msg.text):
+                        elif ("Bk10 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -3311,11 +3410,11 @@ def bot(op):
                                for target in targets:
                                    if target not in Bots:
                                        try:
-                                           k12.kickoutFromGroup(msg.to, [target])
+                                           k11.kickoutFromGroup(msg.to, [target])
                                        except:
                                            pass
                                            
-                        elif ("Bk4 " in msg.text):
+                        elif ("Bk11 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -3326,7 +3425,7 @@ def bot(op):
                                for target in targets:
                                    if target not in TEAM:
                                        try:
-                                           kc.kickoutFromGroup(msg.to, [target])
+                                           k12.kickoutFromGroup(msg.to, [target])
                                        except:
                                            pass
 
