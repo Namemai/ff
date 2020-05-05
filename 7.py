@@ -27,11 +27,11 @@ Bot_startTime = time.strftime("%H:%M:%S", time.localtime())
 print("""
 \033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Start Bot ]\033[0m    
 """%(Bot_startTime))
-cl = LINE("tlm27566@bcaoo.com","mai065558mai")
+cl = LINE("06555mai@gmail.com","mai065558mai")
 cl.log("Auth Token : " + str(cl.authToken))
 channelToken = cl.getChannelResult()
 #========================Token1===================================================#
-ka = LINE("xlg46088@bcaoo.com","mai065558mai")
+ka = LINE("tlm27566@bcaoo.com","mai065558mai")
 ka.log("Auth Token : " + str(ka.authToken))
 channelToken = ka.getChannelResult()
 #========================Token2===================================================#
@@ -43,7 +43,7 @@ kc = LINE("pnm69511@zzrgg.com","mai065558mai")
 kc.log("Auth Token : " + str(kc.authToken))
 channelToken = kc.getChannelResult()
 #========================Token4===================================================#
-kd = LINE("lhd63523@zzrgg.com","mai065558mai")
+kd = LINE("qlz42193@bcaoo.com","mai065558mai")
 kd.log("Auth Token : " + str(kd.authToken))
 channelToken = kd.getChannelResult()
 #========================Token5===================================================#
