@@ -4934,7 +4934,14 @@ def bot(op):
                                cl.sendMessage(msg.to, "Proses rebooting.....")
                                DZwait["rePoint"] = msg.to
                                restartBot()
-                               cl.sendMessage(msg.to, "reboot all bots")                   
+                               cl.sendMessage(msg.to, "reboot all bots")
+
+                        elif cmd == "มี":
+                            if msg._from in ownerbot:
+                              contact = cl.getContact(sender)
+                              image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                              cl.sendMessage(msg.to, "Nama : "+str(contact.displayName))
+                              cl.sendMessage(msg.to, None,contentMetadata={'mid': sender}, contentType=13)
 #======================= Update Foto bots ====================#
                         elif cmd == "upg":
                           if DZwait["selfbot"] == True:
