@@ -840,10 +840,10 @@ def bot(op):
                                 kd.cancelGroupInvitation(op.param1,[op.param2])
                             except:
                                 try:
-                                    G = random.choice(team1).getGroup(op.param1)
+                                    G = random.choice(team2).getGroup(op.param1)
                                     G.preventedJoinByTicket = False
-                                    random.choice(team1).updateGroup(G)
-                                    Ticket = random.choice(team1).reissueGroupTicket(op.param1)
+                                    random.choice(team2).updateGroup(G)
+                                    Ticket = random.choice(team2).reissueGroupTicket(op.param1)
                                     time.sleep(0.001)
                                     cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     ka.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -852,6 +852,7 @@ def bot(op):
                                     kd.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     ke.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     kf.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                    k7.acceptGroupInvitationByTicket(op.param1,Ticket)
                                 except:
                                     try:
                                         kd.kickoutFromGroup(op.param1,[op.param2])
@@ -1309,10 +1310,10 @@ def bot(op):
                                 kb.inviteIntoGroup(op.param1,[op.param3])
                             except:
                                 try:
-                                    X = kc.getGroup(op.param1)
+                                    X = random.choice(team2).getGroup(op.param1)
                                     X.preventedJoinByTicket = False
-                                    kc.updateGroup(X)
-                                    Ticket = kc.reissueGroupTicket(op.param1)
+                                    random.choice(team2).updateGroup(X)
+                                    Ticket = random.choice(team2).reissueGroupTicket(op.param1)
                                     time.sleep(0.001)
                                     cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     ka.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -1322,7 +1323,7 @@ def bot(op):
                                     ke.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     kf.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     k7.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                    kc.kickoutFromGroup(op.param1,[op.param2])
+                                    random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
                                 except:
                                     try:
                                         kd.findAndAddContactsByMid(op.param3)
@@ -2003,22 +2004,22 @@ def bot(op):
                         return
                     else:
                         cmd = command(text)                     
-                        if cmd == "onme":
+                        if cmd == "on":
                             if msg._from in ownerbot:
                                 DZwait["selfbot"] = True
                                 cl.sendMessage(msg.to, "Self bot mode on")
 
-                        elif cmd == "offme":
+                        elif cmd == "off":
                             if msg._from in ownerbot:
                                 DZwait["selfbot"] = False
                                 cl.sendMessage(msg.to, "Self bot mode off")
 
-                        elif cmd == "mod onme":
+                        elif cmd == "mod on":
                             if msg._from in ownerbot:
                                 DZwait["talkban"] = True
                                 cl.sendMessage(msg.to, "mode on in group")
 
-                        elif cmd == "mod offme":
+                        elif cmd == "mod off":
                             if msg._from in ownerbot:
                                 DZwait["talkban"] = False
                                 cl.sendMessage(msg.to, "mode off in group")
@@ -2042,7 +2043,7 @@ def bot(op):
                                bot = "Aktif " +waktu(eltime)
                                cl.sendMessage(msg.to,bot)
                                
-                        elif cmd == "setme":
+                        elif cmd == "set":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 md = ""
@@ -2058,7 +2059,7 @@ def bot(op):
                                 else: md+="Protect invite : off\n\n••Setings  protect••"                   
                                 cl.sendMessage(msg.to, md)
                                 
-                        elif cmd == "helpme":
+                        elif cmd == "help":
                             if msg._from in ownerbot:
                                helpMessage2 = helpbot()
                                cl.sendMessage(msg.to, str(helpMessage2))
@@ -2124,7 +2125,7 @@ def bot(op):
                                ke.sendMessage(msg.to,"threading.Thread(target=login, args=('e','"+ke.authToken+"')).start()")
                                kf.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+kf.authToken+"')).start()")
                                k7.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+kf.authToken+"')).start()")
-                        elif cmd == "speedbot" or cmd == "spbme":
+                        elif cmd == "speedbot" or cmd == "spb":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                start = time.time()
@@ -2137,7 +2138,7 @@ def bot(op):
                                ke.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                kf.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                k7.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
-                        elif cmd == "speed" or cmd == "spme":
+                        elif cmd == "speed" or cmd == "sp":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                start = time.time()
@@ -2145,7 +2146,7 @@ def bot(op):
                                elapsed_time = time.time() - start
                                cl.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                
-                        elif cmd == "รีme":
+                        elif cmd == "รี":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                cl.sendMessage(msg.to, "Proses rebooting.....")
@@ -2160,7 +2161,7 @@ def bot(op):
                                 settings["groupgambar"] = True
                                 cl.sendMessage(msg.to,"Silahkan Kirim fotonya")
 
-                        elif cmd == "upme":
+                        elif cmd == "up":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 settings["changegambar"] = True
@@ -2281,7 +2282,7 @@ def bot(op):
                                 k7.updateProfile(profile)
                                 k7.sendMessage(msg.to,"Succes " + string + "") 
 
-                        elif cmd == "me":
+                        elif cmd == "มี":
                             if msg._from in ownerbot:
                               contact = cl.getContact(sender)
                               image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
