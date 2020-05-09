@@ -2335,9 +2335,6 @@ def bot(op):
                                 k7.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 kicker = [JSmid]
                                 cl.inviteIntoGroup(msg.to, kicker)
-                                G = random.choice(team2).getGroup(msg.to)
-                                G.preventedJoinByTicket = True
-                                random.choice(team2).updateGroup(G)
 
                         elif cmd == "ออก" or cmd == "outme":
                           if DZwait["selfbot"] == True:
