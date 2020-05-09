@@ -1820,7 +1820,6 @@ def bot(op):
             if op.param2 in wait["blacklist"]:
                 if op.param2 not in TEAM and op.param2 not in DZbot["admin"] and op.param2 not in DZbot["Bots"]:
                     random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
-                    random.choice(team2).kickoutFromGroup(op.param1,[target])
 
         if op.type == 25 or op.type == 26:
             msg = op.message
