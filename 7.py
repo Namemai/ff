@@ -878,15 +878,15 @@ def bot(op):
                                                     ka.cancelGroupInvitation(op.param1,[op.param2])
                                                 except:
                                                     try:
-                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                        random.choice(team2).kickoutFromGroup(op.param1,[target])
                                                         random.choice(team2).inviteIntoGroup(op.param1,Bots)
                                                         cl.acceptGroupInvitation(op.param1)
-                                                        random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
+                                                        random.choice(team2).cancelGroupInvitation(op.param1,[target])
                                                     except:
-                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                        random.choice(team2).kickoutFromGroup(op.param1,[target])
                                                         random.choice(team2).inviteIntoGroup(op.param1,Bots)
                                                         cl.acceptGroupInvitation(op.param1)
-                                                        random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
+                                                        random.choice(team2).cancelGroupInvitation(op.param1,[target])
                 else:pass
                 return
             if Amid in op.param3:
@@ -929,15 +929,15 @@ def bot(op):
                                             kb.cancelGroupInvitation(op.param1,[op.param2])                     
                                         except:
                                             try:
-                                                random.choice(team3).kickoutFromGroup(op.param1,[op.param2])
+                                                random.choice(team3).kickoutFromGroup(op.param1,[target])
                                                 random.choice(team3).inviteIntoGroup(op.param1,Bots)
                                                 ka.acceptGroupInvitation(op.param1)
-                                                random.choice(team3).cancelGroupInvitation(op.param1,[op.param2])
+                                                random.choice(team3).cancelGroupInvitation(op.param1,[target])
                                             except:
-                                                random.choice(team3).kickoutFromGroup(op.param1,[op.param2])
+                                                random.choice(team3).kickoutFromGroup(op.param1,[target])
                                                 random.choice(team3).inviteIntoGroup(op.param1,Bots)
                                                 ka.acceptGroupInvitation(op.param1)
-                                                random.choice(team3).cancelGroupInvitation(op.param1,[op.param2])
+                                                random.choice(team3).cancelGroupInvitation(op.param1,[target])
                 else:pass
                 return
             if Bmid in op.param3:
@@ -980,15 +980,15 @@ def bot(op):
                                             kc.cancelGroupInvitation(op.param1,[op.param2])                     
                                         except:
                                             try:
-                                                random.choice(team4).kickoutFromGroup(op.param1,[op.param2])
+                                                random.choice(team4).kickoutFromGroup(op.param1,[target])
                                                 random.choice(team4).inviteIntoGroup(op.param1,Bots)
                                                 kb.acceptGroupInvitation(op.param1)
-                                                random.choice(team4).cancelGroupInvitation(op.param1,[op.param2])
+                                                random.choice(team4).cancelGroupInvitation(op.param1,[target])
                                             except:
-                                                random.choice(team4).kickoutFromGroup(op.param1,[op.param2])
+                                                random.choice(team4).kickoutFromGroup(op.param1,[target])
                                                 random.choice(team4).inviteIntoGroup(op.param1,Bots)
                                                 kb.acceptGroupInvitation(op.param1)
-                                                random.choice(team4).cancelGroupInvitation(op.param1,[op.param2])
+                                                random.choice(team4).cancelGroupInvitation(op.param1,[target])
                 else:pass
                 return
             if Cmid in op.param3:
@@ -1031,15 +1031,15 @@ def bot(op):
                                             kd.cancelGroupInvitation(op.param1,[op.param2])                     
                                         except:
                                             try:
-                                                random.choice(team5).kickoutFromGroup(op.param1,[op.param2])
+                                                random.choice(team5).kickoutFromGroup(op.param1,[target])
                                                 random.choice(team5).inviteIntoGroup(op.param1,Bots)
                                                 kc.acceptGroupInvitation(op.param1)
-                                                random.choice(team5).cancelGroupInvitation(op.param1,[op.param2])
+                                                random.choice(team5).cancelGroupInvitation(op.param1,[target])
                                             except:
-                                                random.choice(team5).kickoutFromGroup(op.param1,[op.param2])
+                                                random.choice(team5).kickoutFromGroup(op.param1,[target])
                                                 random.choice(team5).inviteIntoGroup(op.param1,Bots)
                                                 kc.acceptGroupInvitation(op.param1)
-                                                random.choice(team5).cancelGroupInvitation(op.param1,[op.param2])
+                                                random.choice(team5).cancelGroupInvitation(op.param1,[target])
                 else:pass
                 return
             if Dmid in op.param3:
@@ -1082,15 +1082,15 @@ def bot(op):
                                             ke.cancelGroupInvitation(op.param1,[op.param2])                     
                                         except:
                                             try:
-                                                random.choice(team6).kickoutFromGroup(op.param1,[op.param2])
+                                                random.choice(team6).kickoutFromGroup(op.param1,[target])
                                                 random.choice(team6).inviteIntoGroup(op.param1,Bots)
                                                 kd.acceptGroupInvitation(op.param1)
-                                                random.choice(team6).cancelGroupInvitation(op.param1,[op.param2])
+                                                random.choice(team6).cancelGroupInvitation(op.param1,[target])
                                             except:
-                                                random.choice(team6).kickoutFromGroup(op.param1,[op.param2])
+                                                random.choice(team6).kickoutFromGroup(op.param1,[target])
                                                 random.choice(team6).inviteIntoGroup(op.param1,Bots)
                                                 kd.acceptGroupInvitation(op.param1)
-                                                random.choice(team6).cancelGroupInvitation(op.param1,[op.param2])
+                                                random.choice(team6).cancelGroupInvitation(op.param1,[target])
                 else:pass
                 return
             if Emid in op.param3:
@@ -1133,15 +1133,15 @@ def bot(op):
                                             kf.cancelGroupInvitation(op.param1,[op.param2])                     
                                         except:
                                             try:
-                                                random.choice(team7).kickoutFromGroup(op.param1,[op.param2])
+                                                random.choice(team7).kickoutFromGroup(op.param1,[target])
                                                 random.choice(team7).inviteIntoGroup(op.param1,Bots)
                                                 ke.acceptGroupInvitation(op.param1)
-                                                random.choice(team7).cancelGroupInvitation(op.param1,[op.param2])
+                                                random.choice(team7).cancelGroupInvitation(op.param1,[target])
                                             except:
-                                                random.choice(team7).kickoutFromGroup(op.param1,[op.param2])
+                                                random.choice(team7).kickoutFromGroup(op.param1,[target])
                                                 random.choice(team7).inviteIntoGroup(op.param1,Bots)
                                                 ke.acceptGroupInvitation(op.param1)
-                                                random.choice(team7).cancelGroupInvitation(op.param1,[op.param2])
+                                                random.choice(team7).cancelGroupInvitation(op.param1,[target])
                 else:pass
                 return
             if Fmid in op.param3:
@@ -1184,15 +1184,15 @@ def bot(op):
                                             k7.cancelGroupInvitation(op.param1,[op.param2])                     
                                         except:
                                             try:
-                                                random.choice(team8).kickoutFromGroup(op.param1,[op.param2])
+                                                random.choice(team8).kickoutFromGroup(op.param1,[target])
                                                 random.choice(team8).inviteIntoGroup(op.param1,Bots)
                                                 kf.acceptGroupInvitation(op.param1)
-                                                random.choice(team8).cancelGroupInvitation(op.param1,[op.param2])
+                                                random.choice(team8).cancelGroupInvitation(op.param1,[target])
                                             except:
-                                                random.choice(team8).kickoutFromGroup(op.param1,[op.param2])
+                                                random.choice(team8).kickoutFromGroup(op.param1,[target])
                                                 random.choice(team8).inviteIntoGroup(op.param1,Bots)
                                                 kf.acceptGroupInvitation(op.param1)
-                                                random.choice(team8).cancelGroupInvitation(op.param1,[op.param2])
+                                                random.choice(team8).cancelGroupInvitation(op.param1,[target])
                 else:pass
                 return
             if K7mid in op.param3:
@@ -1235,15 +1235,15 @@ def bot(op):
                                             ka.cancelGroupInvitation(op.param1,[op.param2])                     
                                         except:
                                             try:
-                                                random.choice(team1).kickoutFromGroup(op.param1,[op.param2])
+                                                random.choice(team1).kickoutFromGroup(op.param1,[target])
                                                 random.choice(team1).inviteIntoGroup(op.param1,Bots)
                                                 k7.acceptGroupInvitation(op.param1)
-                                                random.choice(team1).cancelGroupInvitation(op.param1,[op.param2])
+                                                random.choice(team1).cancelGroupInvitation(op.param1,[target])
                                             except:
-                                                random.choice(team1).kickoutFromGroup(op.param1,[op.param2])
+                                                random.choice(team1).kickoutFromGroup(op.param1,[target])
                                                 random.choice(team1).inviteIntoGroup(op.param1,Bots)
                                                 k7.acceptGroupInvitation(op.param1)
-                                                random.choice(team1).cancelGroupInvitation(op.param1,[op.param2])
+                                                random.choice(team1).cancelGroupInvitation(op.param1,[target])
                 else:pass
                 return
             if op.type == 19:
@@ -1286,13 +1286,13 @@ def bot(op):
                                                     ka.cancelGroupInvitation(op.param1,[op.param2])
                                                 except:
                                                     try:
-                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                        random.choice(team2).kickoutFromGroup(op.param1,[target])
                                                         random.choice(team2).inviteIntoGroup(op.param1,[op.param3])
-                                                        random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
+                                                        random.choice(team2).cancelGroupInvitation(op.param1,[target])
                                                     except:
                                                         random.choice(team2).inviteIntoGroup(op.param1,Bots)
-                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
-                                                        random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
+                                                        random.choice(team2).kickoutFromGroup(op.param1,[target])
+                                                        random.choice(team2).cancelGroupInvitation(op.param1,[target])
                     else:pass
                     return
                 if op.param3 in ownerbot:
@@ -1346,10 +1346,10 @@ def bot(op):
                                                 except:
                                                     try:
                                                         random.choice(team2).inviteIntoGroup(op.param1,[op.param3])
-                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                        random.choice(team2).kickoutFromGroup(op.param1,[target])
                                                     except:
                                                         random.choice(team2).inviteIntoGroup(op.param1,[op.param3])
-                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                        random.choice(team2).kickoutFromGroup(op.param1,[target])
                     else:pass
                     return
                 if op.param3 in DZbot["admin"]:
@@ -1391,10 +1391,10 @@ def bot(op):
                                                     k7.inviteIntoGroup(op.param1,[op.param3])
                                                 except:
                                                     try:
-                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                        random.choice(team2).kickoutFromGroup(op.param1,[target])
                                                         random.choice(team2).inviteIntoGroup(op.param1,[op.param3])
                                                     except:
-                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                        random.choice(team2).kickoutFromGroup(op.param1,[target])
                                                         random.choice(team2).inviteIntoGroup(op.param1,[op.param3])
                     else:pass
                     return
@@ -1572,11 +1572,11 @@ def bot(op):
                                                     k7.cancelGroupInvitation(op.param1,[i])
                                                 except:
                                                     try:
-                                                        random.choice(team2).cancelGroupInvitation(op.param1,[i])
+                                                        random.choice(team2).cancelGroupInvitation(op.param1,[target])
                                                     except:
-                                                        random.choice(team2).cancelGroupInvitation(op.param1,[i])
+                                                        random.choice(team2).cancelGroupInvitation(op.param1,[target])
                         try:
-                            random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                            random.choice(team2).kickoutFromGroup(op.param1,[target])
                         except:
                             pass
                 if op.param2 not in wait["blacklist"]:pass
@@ -1607,9 +1607,9 @@ def bot(op):
                                                     k7.cancelGroupInvitation(op.param1,[i])
                                                 except:
                                                     try:
-                                                        random.choice(team2).cancelGroupInvitation(op.param1,[i])
+                                                        random.choice(team2).cancelGroupInvitation(op.param1,[target])
                                                     except:
-                                                        random.choice(team2).cancelGroupInvitation(op.param1,[i])
+                                                        random.choice(team2).cancelGroupInvitation(op.param1,[target])
         if op.type == 17:
             if op.param1 in protectjoin:
                 if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
@@ -1820,7 +1820,8 @@ def bot(op):
             if op.param2 in wait["blacklist"]:
                 if op.param2 not in TEAM and op.param2 not in DZbot["admin"] and op.param2 not in DZbot["Bots"]:
                     random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
-             
+                    random.choice(team2).kickoutFromGroup(op.param1,[target])
+
         if op.type == 25 or op.type == 26:
             msg = op.message
             text = msg.text
@@ -2003,22 +2004,22 @@ def bot(op):
                         return
                     else:
                         cmd = command(text)                     
-                        if cmd == "on":
+                        if cmd == "onme":
                             if msg._from in ownerbot:
                                 DZwait["selfbot"] = True
                                 cl.sendMessage(msg.to, "Self bot mode on")
 
-                        elif cmd == "off":
+                        elif cmd == "offme":
                             if msg._from in ownerbot:
                                 DZwait["selfbot"] = False
                                 cl.sendMessage(msg.to, "Self bot mode off")
 
-                        elif cmd == "mod on":
+                        elif cmd == "mod onme":
                             if msg._from in ownerbot:
                                 DZwait["talkban"] = True
                                 cl.sendMessage(msg.to, "mode on in group")
 
-                        elif cmd == "mod off":
+                        elif cmd == "mod offme":
                             if msg._from in ownerbot:
                                 DZwait["talkban"] = False
                                 cl.sendMessage(msg.to, "mode off in group")
@@ -2042,7 +2043,7 @@ def bot(op):
                                bot = "Aktif " +waktu(eltime)
                                cl.sendMessage(msg.to,bot)
                                
-                        elif cmd == "set":
+                        elif cmd == "setme":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 md = ""
@@ -2058,7 +2059,7 @@ def bot(op):
                                 else: md+="Protect invite : off\n\n••Setings  protect••"                   
                                 cl.sendMessage(msg.to, md)
                                 
-                        elif cmd == "help":
+                        elif cmd == "helpme":
                             if msg._from in ownerbot:
                                helpMessage2 = helpbot()
                                cl.sendMessage(msg.to, str(helpMessage2))
@@ -2124,7 +2125,7 @@ def bot(op):
                                ke.sendMessage(msg.to,"threading.Thread(target=login, args=('e','"+ke.authToken+"')).start()")
                                kf.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+kf.authToken+"')).start()")
                                k7.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+kf.authToken+"')).start()")
-                        elif cmd == "speedbot" or cmd == "spb":
+                        elif cmd == "speedbot" or cmd == "spbme":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                start = time.time()
@@ -2137,7 +2138,7 @@ def bot(op):
                                ke.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                kf.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                k7.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
-                        elif cmd == "speed" or cmd == "sp":
+                        elif cmd == "speed" or cmd == "spme":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                start = time.time()
@@ -2145,7 +2146,7 @@ def bot(op):
                                elapsed_time = time.time() - start
                                cl.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                
-                        elif cmd == "รี":
+                        elif cmd == "รีme":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                cl.sendMessage(msg.to, "Proses rebooting.....")
@@ -2160,7 +2161,7 @@ def bot(op):
                                 settings["groupgambar"] = True
                                 cl.sendMessage(msg.to,"Silahkan Kirim fotonya")
 
-                        elif cmd == "up":
+                        elif cmd == "upme":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 settings["changegambar"] = True
@@ -2201,7 +2202,7 @@ def bot(op):
                                 DZwait["foto"][Fmid] = True
                                 k7.sendMessage(msg.to,"Silahkan kirim foto nya")
 #======================= Update Name bots ====================#
-                        elif cmd.startswith("name: "):
+                        elif cmd.startswith("me: "):
                           if msg._from in ownerbot:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -2211,7 +2212,7 @@ def bot(op):
                                 cl.updateProfile(profile)
                                 cl.sendMessage(msg.to,"Succes " + string + "")
 
-                        elif cmd.startswith("1name: "):
+                        elif cmd.startswith("1me: "):
                           if msg._from in ownerbot:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -2221,7 +2222,7 @@ def bot(op):
                                 ka.updateProfile(profile)
                                 ka.sendMessage(msg.to,"Succes " + string + "")
 
-                        elif cmd.startswith("2name: "):
+                        elif cmd.startswith("2me: "):
                           if msg._from in ownerbot:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -2231,7 +2232,7 @@ def bot(op):
                                 kb.updateProfile(profile)
                                 kb.sendMessage(msg.to,"Succes " + string + "")
 
-                        elif cmd.startswith("3name: "):
+                        elif cmd.startswith("3me: "):
                           if msg._from in ownerbot:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -2241,7 +2242,7 @@ def bot(op):
                                 kc.updateProfile(profile)
                                 kc.sendMessage(msg.to,"Succes " + string + "")
 
-                        elif cmd.startswith("4name: "):
+                        elif cmd.startswith("4me: "):
                           if msg._from in ownerbot:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -2251,7 +2252,7 @@ def bot(op):
                                 kd.updateProfile(profile)
                                 kd.sendMessage(msg.to,"Succes " + string + "")
 
-                        elif cmd.startswith("5name: "):
+                        elif cmd.startswith("5me: "):
                           if msg._from in ownerbot:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -2261,7 +2262,7 @@ def bot(op):
                                 ke.updateProfile(profile)
                                 ke.sendMessage(msg.to,"Succes " + string + "")
                                 
-                        elif cmd.startswith("6name: "):
+                        elif cmd.startswith("6me: "):
                           if msg._from in ownerbot:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -2271,7 +2272,7 @@ def bot(op):
                                 kf.updateProfile(profile)
                                 kf.sendMessage(msg.to,"Succes " + string + "") 
 
-                        elif cmd.startswith("7name: "):
+                        elif cmd.startswith("7me: "):
                           if msg._from in ownerbot:
                             separate = msg.text.split(" ")
                             string = msg.text.replace(separate[0] + " ","")
@@ -2281,14 +2282,14 @@ def bot(op):
                                 k7.updateProfile(profile)
                                 k7.sendMessage(msg.to,"Succes " + string + "") 
 
-                        elif cmd == "มี":
+                        elif cmd == "me":
                             if msg._from in ownerbot:
                               contact = cl.getContact(sender)
                               image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
                               cl.sendMessage(msg.to, "Nama : "+str(contact.displayName))
                               cl.sendMessage(msg.to, None,contentMetadata={'mid': sender}, contentType=13)
                      
-                        elif cmd == "b":
+                        elif cmd == "bb":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 ka.sendMessage(msg.to,"พร้อม")
@@ -2316,7 +2317,7 @@ def bot(op):
                                 except:
                                     pass
 
-                        elif cmd == "มา" or cmd == "in":
+                        elif cmd == "มา" or cmd == "inme":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
@@ -2334,10 +2335,11 @@ def bot(op):
                                 k7.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 kicker = [JSmid]
                                 cl.inviteIntoGroup(msg.to, kicker)
-                                
-                                
+                                G = random.choice(team2).getGroup(msg.to)
+                                G.preventedJoinByTicket = True
+                                random.choice(team2).updateGroup(G)
 
-                        elif cmd == "ออก" or cmd == "out":
+                        elif cmd == "ออก" or cmd == "outme":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
@@ -2349,7 +2351,7 @@ def bot(op):
                                 kf.leaveGroup(msg.to)
                                 k7.leaveGroup(msg.to)
 
-                        elif cmd == "bye":
+                        elif cmd == "byeme":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
@@ -2838,7 +2840,7 @@ def bot(op):
                                           pass
 
                         
-                        elif cmd == "ck":
+                        elif cmd == "ckme":
                             if msg._from in ownerbot or msg._from in DHENZA:
                                try:ka.inviteIntoGroup(to, [Amid]);has = "OK"
                                except:has = "NOT"
