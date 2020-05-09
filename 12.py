@@ -2490,7 +2490,7 @@ def bot(op):
                                                                     except:
                                                                         random.choice(team2).cancelGroupInvitation(op.param1,[i])
                         try:
-                            random.choice(team2).kickoutFromGroup(op.param1,[i])
+                            random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
                         except:
                             pass
                 if op.param2 not in wait["blacklist"]:pass
