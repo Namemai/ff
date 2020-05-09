@@ -28,91 +28,91 @@ print("""
 \033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Start Bot ]\033[0m    
 """%(Bot_startTime))
 
-cl = LINE("noompaisol8023@gmail.com","N0891554508")
+cl = LINE("vmh25600@zzrgg.com","mai065558mai")
 cl.log("Auth Token : " + str(cl.authToken))
 channelToken = cl.getChannelResult()
 #========================Token1===================================================#
-ka = LINE("vst47881@eoopy.com","N0891554508")
+ka = LINE("kuq55542@eoopy.com","mai065558mai")
 ka.log("Auth Token : " + str(ka.authToken))
 channelToken = ka.getChannelResult()
 #========================Token2===================================================#
-kb = LINE("yfv00900@zzrgg.com","N0891554508")
+kb = LINE("whm11723@eoopy.com","mai065558mai")
 kb.log("Auth Token : " + str(kb.authToken))
 channelToken = kb.getChannelResult()
 #========================Token3===================================================#
-kc = LINE("tsk68960@eoopy.com","N0891554508")
+kc = LINE("ois40584@bcaoo.com","mai065558mai")
 kc.log("Auth Token : " + str(kc.authToken))
 channelToken = kc.getChannelResult()
 #========================Token4===================================================#
-kd = LINE("gkl87129@eoopy.com","N0891554508")
+kd = LINE("rge96384@eoopy.com","mai065558mai")
 kd.log("Auth Token : " + str(kd.authToken))
 channelToken = kd.getChannelResult()
 #========================Token5===================================================#
-ke = LINE("iou85385@eoopy.com","N0891554508")
+ke = LINE("hsp56490@zzrgg.com","mai065558mai")
 ke.log("Auth Token : " + str(ke.authToken))
 channelToken = ke.getChannelResult()
 #========================Token6===================================================#
-kf = LINE("pbh40458@eoopy.com","N0891554508")
+kf = LINE("qdf00109@bcaoo.com","mai065558mai")
 kf.log("Auth Token : " + str(kf.authToken))
 channelToken = kf.getChannelResult()
-#============================[7]===============================================#
-k8 = LINE("fgj90510@eoopy.com","N0891554508")
+#===========================================================================#
+k8 = LINE("nmk63326@zzrgg.com","mai065558mai")
 k8.log("Auth Token : " + str(k8.authToken))
 channelToken = k8.getChannelResult()
-#============================[8]===============================================#
-k9 = LINE("azn03676@bcaoo.com","N0891554508")
+#===========================================================================#
+k9 = LINE("wjv83566@zzrgg.com","mai065558mai")
 k9.log("Auth Token : " + str(k9.authToken))
 channelToken = k9.getChannelResult()
-#============================[9]===============================================#
-k10 = LINE("gpc94087@eoopy.com","N0891554508")
+#===========================================================================#
+k10 = LINE("nzd90380@eoopy.com","mai065558mai")
 k10.log("Auth Token : " + str(k10.authToken))
 channelToken = k10.getChannelResult()
-#==============================[10]=============================================#
-k11 = LINE("mtb84131@bcaoo.com","N0891554508")
+#===========================================================================#
+k11 = LINE("agg58835@zzrgg.com","mai065558mai")
 k11.log("Auth Token : " + str(k11.authToken))
 channelToken = k11.getChannelResult()
-#============================[11]===============================================#
-k12 = LINE("yxn56604@eoopy.com","N0891554508")
+#===========================================================================#
+k12 = LINE("slz49180@zzrgg.com","mai065558mai")
 k12.log("Auth Token : " + str(k12.authToken))
 channelToken = k12.getChannelResult()
 #==============================[12]=============================================#
-k13 = LINE("tpi44390@bcaoo.com","N0891554508")
+k13 = LINE("tpi44390@bcaoo.com","mai065558mai")
 k13.log("Auth Token : " + str(k13.authToken))
 channelToken = k13.getChannelResult()
 #=============================[13]==============================================#
-k14 = LINE("jsu02172@eoopy.com","N0891554508")
+k14 = LINE("jsu02172@eoopy.com","mai065558mai")
 k14.log("Auth Token : " + str(k14.authToken))
 channelToken = k14.getChannelResult()
 #==============================[14]=============================================#
-k15 = LINE("cpc83081@bcaoo.com","N0891554508")
+k15 = LINE("cpc83081@bcaoo.com","mai065558mai")
 k15.log("Auth Token : " + str(k15.authToken))
 channelToken = k15.getChannelResult()
 #============================[15]===============================================#
-k16 = LINE("ysk03072@zzrgg.com","N0891554508")
+k16 = LINE("ysk03072@zzrgg.com","mai065558mai")
 k16.log("Auth Token : " + str(k16.authToken))
 channelToken = k16.getChannelResult()
 #==============================[16]=============================================#
-k17 = LINE("mcm58422@zzrgg.com","N0891554508")
+k17 = LINE("mcm58422@zzrgg.com","mai065558mai")
 k17.log("Auth Token : " + str(k17.authToken))
 channelToken = k17.getChannelResult()
 #=============================[17]==============================================#
-k18 = LINE("jms27324@bcaoo.com","N0891554508")
+k18 = LINE("jms27324@bcaoo.com","mai065558mai")
 k18.log("Auth Token : " + str(k18.authToken))
 channelToken = k18.getChannelResult()
 #=============================[18]==============================================#
-k19 = LINE("lls26302@bcaoo.com","N0891554508")
+k19 = LINE("lls26302@bcaoo.com","mai065558mai")
 k19.log("Auth Token : " + str(k19.authToken))
 channelToken = k19.getChannelResult()
 #==============================[19]=============================================#
-k20 = LINE("oog21277@bcaoo.com","N0891554508")
+k20 = LINE("oog21277@bcaoo.com","mai065558mai")
 k20.log("Auth Token : " + str(k20.authToken))
 channelToken = k20.getChannelResult()
 #===========================[20]================================================#
-k21 = LINE("uyh94815@eoopy.com","N0891554508")
+k21 = LINE("uyh94815@eoopy.com","mai065558mai")
 k21.log("Auth Token : " + str(k21.authToken))
 channelToken = k21.getChannelResult()
 #========================[21]===================================================#
-ajs = LINE("dpi95011@zzrgg.com","N0891554508")
+ajs = LINE("dpi95011@zzrgg.com","mai065558mai")
 ajs.log("Auth Token : " + str(kf.authToken))
 channelToken = ajs.getChannelResult()
 #==============•••••••••••••••••   BOT WAR V`1 BY TEAM BOT PROTECT •••••••••••••••==============#
