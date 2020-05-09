@@ -667,7 +667,7 @@ def bot(op):
                                                                                         except:
                                                                                             try:
                                                                                                 random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
-                                                                                             except:
+                                                                                            except:
                                                                                                 random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
             if op.param3 in wait["blacklist"]:
                 if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
@@ -727,7 +727,7 @@ def bot(op):
                                                                                         except:
                                                                                             try:
                                                                                                 random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
-                                                                                             except:
+                                                                                            except:
                                                                                                 random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
                 else:pass
             if op.param3 in wait["blacklist"]:
