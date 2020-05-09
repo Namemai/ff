@@ -72,7 +72,7 @@ k11 = LINE("agg58835@zzrgg.com","mai065558mai")
 k11.log("Auth Token : " + str(k11.authToken))
 channelToken = k11.getChannelResult()
 #===========================================================================#
-k12 = LINE("slz49180@zzrgg.com","mai065558mai")
+k12 = LINE("@zzrgg.com","mai065558mai")
 k12.log("Auth Token : " + str(k12.authToken))
 channelToken = k12.getChannelResult()
 #==============================[12]=============================================#
