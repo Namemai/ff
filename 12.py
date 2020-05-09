@@ -28,7 +28,7 @@ print("""
 \033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Start Bot ]\033[0m    
 """%(Bot_startTime))
 
-cl = LINE("vmh25600@zzrgg.com","mai065558mai")
+cl = LINE("06555mai@gmail.com","mai065558mai")
 cl.log("Auth Token : " + str(cl.authToken))
 channelToken = cl.getChannelResult()
 #========================Token1===================================================#
@@ -72,11 +72,11 @@ k11 = LINE("agg58835@zzrgg.com","mai065558mai")
 k11.log("Auth Token : " + str(k11.authToken))
 channelToken = k11.getChannelResult()
 #===========================================================================#
-k12 = LINE("slz49180@zzrgg.com","mai065558mai")
+k12 = LINE("eol92771@bcaoo.com","mai065558mai")
 k12.log("Auth Token : " + str(k12.authToken))
 channelToken = k12.getChannelResult()
 #========================Tokenjs===================================================#
-ajs = LINE("eol92771@bcaoo.com","mai065558mai")
+ajs = LINE("cws34465@bcaoo.com","mai065558mai")
 ajs.log("Auth Token : " + str(kf.authToken))
 channelToken = ajs.getChannelResult()
 #==============•••••••••••••••••   BOT WAR V`1 BY TEAM BOT PROTECT •••••••••••••••==============#
