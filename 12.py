@@ -56,7 +56,7 @@ kf = LINE("qdf00109@bcaoo.com","mai065558mai")
 kf.log("Auth Token : " + str(kf.authToken))
 channelToken = kf.getChannelResult()
 #===========================================================================#
-k8 = LINE("nmk63326@zzrgg.com","mai065558mai")
+k8 = LINE("vmh25600@zzrgg.com","mai065558mai")
 k8.log("Auth Token : " + str(k8.authToken))
 channelToken = k8.getChannelResult()
 #===========================================================================#
