@@ -2132,12 +2132,12 @@ def bot(op):
                             kf.sendMessage(msg.to,"Succes")
                         elif K7mid in DZwait["foto"]:
                             path = k7.downloadObjectMsg(msg_id)
-                            del DZwait["foto"][Fmid]
+                            del DZwait["foto"][K7mid]
                             k7.updateProfilePicture(path7)
                             k7.sendMessage(msg.to,"Succes")
                         elif K8mid in DZwait["foto"]:
                             path = k8.downloadObjectMsg(msg_id)
-                            del DZwait["foto"][Fmid]
+                            del DZwait["foto"][K8mid]
                             k8.updateProfilePicture(path8)
                             k8.sendMessage(msg.to,"Succes")
 
@@ -2485,7 +2485,7 @@ def bot(op):
                               cl.sendMessage(msg.to, "Nama : "+str(contact.displayName))
                               cl.sendMessage(msg.to, None,contentMetadata={'mid': sender}, contentType=13)
                      
-                        elif cmd == "bb":
+                        elif cmd == "b":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 ka.sendMessage(msg.to,"พร้อม")
@@ -2502,7 +2502,7 @@ def bot(op):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 try:
-                                    kicker = [Amid,Bmid,Cmid,Dmid,Emid,Fmid,K7mid]
+                                    kicker = [Amid,Bmid,Cmid,Dmid,Emid,Fmid,K7mid,K8mid]
                                     cl.inviteIntoGroup(msg.to, kicker)
                                     ka.acceptGroupInvitation(msg.to)
                                     kb.acceptGroupInvitation(msg.to)
