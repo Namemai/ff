@@ -64,11 +64,11 @@ k9 = LINE("wjv83566@zzrgg.com","mai065558mai")
 k9.log("Auth Token : " + str(k9.authToken))
 channelToken = k9.getChannelResult()
 #===========================================================================#
-k10 = LINE("เมลนี้nzd90380@eoopy.com","mai065558mai")
+k10 = LINE("@eoopy.com","mai065558mai")
 k10.log("Auth Token : " + str(k10.authToken))
 channelToken = k10.getChannelResult()
 #===========================================================================#
-k11 = LINE("agg58835@zzrgg.com","mai065558mai")
+k11 = LINE("เมลนี้agg58835@zzrgg.com","mai065558mai")
 k11.log("Auth Token : " + str(k11.authToken))
 channelToken = k11.getChannelResult()
 #===========================================================================#
