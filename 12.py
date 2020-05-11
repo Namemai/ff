@@ -40,7 +40,7 @@ kb = LINE("rov82315@bcaoo.com","mai065558mai")
 kb.log("Auth Token : " + str(kb.authToken))
 channelToken = kb.getChannelResult()
 #========================Token3===================================================#
-kc = LINE("zwg52220@eoopy.com","mai065558mai")
+kc = LINE("yug10177@zzrgg.com","mai065558mai")
 kc.log("Auth Token : " + str(kc.authToken))
 channelToken = kc.getChannelResult()
 #========================Token4===================================================#
@@ -52,7 +52,7 @@ ke = LINE("kwr28446@bcaoo.com","mai065558mai")
 ke.log("Auth Token : " + str(ke.authToken))
 channelToken = ke.getChannelResult()
 #========================Token6===================================================#
-kf = LINE("zyq43904@eoopy.com","mai065558mai")
+kf = LINE("oia90237@bcaoo.com","mai065558mai")
 kf.log("Auth Token : " + str(kf.authToken))
 channelToken = kf.getChannelResult()
 #===========================================================================#
