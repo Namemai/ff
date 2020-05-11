@@ -5221,6 +5221,35 @@ def bot(op):
                             if msg._from in ownerbot:
                                 DZwait["foto"][Fmid] = True
                                 kf.sendMessage(msg.to,"Silahkan kirim foto nya")
+
+                        elif cmd == "เปิดลิ้ง":
+                          if DZwait["selfbot"] == True:
+                            if msg._from in ownerbot:
+                                if msg.toType == 2:
+                                   X = cl.getGroup(msg.to)
+                                   X.preventedJoinByTicket = False
+                                   cl.updateGroup(X)
+                                   cl.sendMessage(msg.to, "Url Opened")
+
+                        elif cmd == "ปิดลิ้ง":
+                          if DZwait["selfbot"] == True:
+                            if msg._from in ownerbot:
+                                if msg.toType == 2:
+                                   X = cl.getGroup(msg.to)
+                                   X.preventedJoinByTicket = True
+                                   cl.updateGroup(X)
+                                   cl.sendMessage(msg.to, "Url Closed")
+
+                        elif cmd == "ลิ้ง":
+                          if DZwait["selfbot"] == True:
+                            if msg._from in ownerbot:
+                                if msg.toType == 2:
+                                   x = cl.getGroup(msg.to)
+                                   if x.preventedJoinByTicket == True:
+                                      x.preventedJoinByTicket = False
+                                      cl.updateGroup(x)
+                                   gurl = cl.reissueGroupTicket(msg.to)
+                                   cl.sendMessage(msg.to, "Nama : "+str(x.name)+ "\nUrl grup : http://line.me/R/ti/g/"+gurl)
 #======================= Update Name bots ====================#
                         elif cmd.startswith("name: "):
                           if msg._from in ownerbot:
@@ -5500,6 +5529,9 @@ def bot(op):
                                 k19.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 k20.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 k21.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                G = k21.getGroup(msg.to)
+                                G.preventedJoinByTicket = True
+                                k21.updateGroup(G)
                                 kicker = [JSmid]
                                 cl.inviteIntoGroup(msg.to, kicker)
                                 
@@ -5680,6 +5712,30 @@ def bot(op):
                                          ginfo = cl.getGroup(msg.to)
                                          msgs = ""
                                     cl.sendMessage(msg.to, "All protect mode off")
+
+                        elif ("มิด " in msg.text):
+                          if DZwait["selfbot"] == True:
+                            if msg._from in ownerbot:
+                               key = eval(msg.contentMetadata["MENTION"])
+                               key1 = key["MENTIONEES"][0]["M"]
+                               mi = cl.getContact(key1)
+                               cl.sendMessage(msg.to, "Nama : "+str(mi.displayName)+"\nMID : " +key1)
+                               cl.sendMessage(msg.to, None, contentMetadata={'mid': key1}, contentType=13)
+
+                        elif ("ดึง " in msg.text):
+                          if DZwait["selfbot"] == True:
+                            if msg._from in ownerbot:
+                               key = eval(msg.contentMetadata["MENTION"])
+                               key["MENTIONEES"][0]["M"]                                                                                                                                
+                               targets = []
+                               for x in key["MENTIONEES"]:                                                                                                                                  
+                                   targets.append(x["M"])
+                               for target in targets:                                                                                                                                       
+                                   try:
+                                      cl.findAndAddContactsByMid(target)
+                                      cl.inviteIntoGroup(msg.to,[target])
+                                   except:
+                                       pass
                        
                         elif ("Bk " in msg.text):
                           if DZwait["selfbot"] == True:
