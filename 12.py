@@ -3098,7 +3098,7 @@ def bot(op):
                                k10.sendMessage(msg.to,"threading.Thread(target=login, args=('d','"+k10.authToken+"')).start()")
                                k11.sendMessage(msg.to,"threading.Thread(target=login, args=('e','"+k11.authToken+"')).start()")
                                k12.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+k12.authToken+"')).start()")
-                        elif cmd == "speed" or cmd == "sp":
+                        elif cmd == "speedbot" or cmd == "spb":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                start = time.time()
@@ -3115,6 +3115,14 @@ def bot(op):
                                k10.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                k11.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                k12.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
+
+                        elif cmd == "speed" or cmd == "sp":
+                          if DZwait["selfbot"] == True:
+                            if msg._from in ownerbot:
+                               start = time.time()
+                               cl.sendMessage(msg.to, "สปีดบอท")
+                               elapsed_time = time.time() - start
+                               cl.sendMessage(msg.to, "Speed\n{}".format(elapsed_time))
                                
                         elif cmd == "รี":
                           if DZwait["selfbot"] == True:
