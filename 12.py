@@ -3832,7 +3832,7 @@ def bot(op):
                                 md+= "│╚══[ MAI ]"
                                 cl.sendMessage(msg.to, md+"\n│ᴛᴀɴɢɢᴀʟ : "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\n│ᴊᴀᴍ  "+ datetime.strftime(timeNow,'%H:%M:%S')+" ")   
                                 
-                        elif cmd == "รายชื่อกลุ่ม":
+                        elif cmd == "กลุ่ม":
                         	if msg._from in ownerbot or msg._from in DHENZA:
                                  groups = cl.groups
                                  ret_ = "╭──[ Group List ]"
