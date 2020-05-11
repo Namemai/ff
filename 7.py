@@ -2346,7 +2346,7 @@ def bot(op):
                                 except:
                                     pass
 
-                        elif cmd == "มา" or cmd == "inme":
+                        elif cmd == "มา" or cmd == "in":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
@@ -2368,7 +2368,7 @@ def bot(op):
                                 kicker = [JSmid]
                                 cl.inviteIntoGroup(msg.to, kicker)
 
-                        elif cmd == "ออก" or cmd == "outme":
+                        elif cmd == "ออก" or cmd == "out":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
@@ -2893,7 +2893,7 @@ def bot(op):
                                           pass
 
                         
-                        elif cmd == "ckme":
+                        elif cmd == "ck":
                             if msg._from in ownerbot or msg._from in DHENZA:
                                try:ka.inviteIntoGroup(to, [Amid]);has = "OK"
                                except:has = "NOT"
