@@ -1050,11 +1050,18 @@ def bot(op):
                                                                     ka.cancelGroupInvitation(op.param1,[op.param2])
                                                                     wait["blacklist"][op.param2] = True
                                                                 except:
-                                                                    random.choice(team2).inviteIntoGroup(op.param1,Bots)
-                                                                    random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
-                                                                    cl.acceptGroupInvitation(op.param1)
-                                                                    random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
-                                                                    wait["blacklist"][op.param2] = True
+                                                                    try:
+                                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                                        random.choice(team2).inviteIntoGroup(op.param1,Bots)
+                                                                        cl.acceptGroupInvitation(op.param1)
+                                                                        random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
+                                                                        wait["blacklist"][op.param2] = True
+                                                                    except:
+                                                                        random.choice(team2).inviteIntoGroup(op.param1,Bots)
+                                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                                        cl.acceptGroupInvitation(op.param1)
+                                                                        random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
+                                                                        wait["blacklist"][op.param2] = True
                 else:pass
                 return
             if Amid in op.param3:
@@ -2734,6 +2741,7 @@ def bot(op):
             if op.param2 in wait["blacklist"]:
                 if op.param2 not in TEAM and op.param2 not in DZbot["admin"] and op.param2 not in DZbot["Bots"]:
                     random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                    random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
              
         if op.type == 25 or op.type == 26:
             msg = op.message
@@ -2932,15 +2940,15 @@ def bot(op):
                      kf.updateProfilePicture(path6)
                      kf.sendMessage(msg.to, "Succes Ubah pic 6")
                      k8.updateProfilePicture(path7)
-                     k8.sendMessage(msg.to, "Succes Ubah pic 2")
+                     k8.sendMessage(msg.to, "Succes Ubah pic 7")
                      k9.updateProfilePicture(path8)
-                     k9.sendMessage(msg.to, "Succes Ubab pic 3")
+                     k9.sendMessage(msg.to, "Succes Ubab pic 8")
                      k10.updateProfilePicture(path9)
-                     k10.sendMessage(msg.to, "Succes Ubah pic 4")
+                     k10.sendMessage(msg.to, "Succes Ubah pic 9")
                      k11.updateProfilePicture(path10)
-                     k11.sendMessage(msg.to, "Succes Ubah pic 5")
+                     k11.sendMessage(msg.to, "Succes Ubah pic 10")
                      k12.updateProfilePicture(path11)
-                     k12.sendMessage(msg.to, "Succes Ubah pic 6")
+                     k12.sendMessage(msg.to, "Succes Ubah pic 11")
 
                if msg.contentType == 0:
                     if DZwait["autoRead"] == True:
@@ -3171,6 +3179,35 @@ def bot(op):
                             if msg._from in ownerbot:
                                 DZwait["foto"][Fmid] = True
                                 kf.sendMessage(msg.to,"Silahkan kirim foto nya")
+
+                        elif cmd == "เปิดลิ้ง":
+                          if DZwait["selfbot"] == True:
+                            if msg._from in ownerbot:
+                                if msg.toType == 2:
+                                   X = cl.getGroup(msg.to)
+                                   X.preventedJoinByTicket = False
+                                   cl.updateGroup(X)
+                                   cl.sendMessage(msg.to, "Url Opened")
+
+                        elif cmd == "ปิดลิ้ง":
+                          if DZwait["selfbot"] == True:
+                            if msg._from in ownerbot:
+                                if msg.toType == 2:
+                                   X = cl.getGroup(msg.to)
+                                   X.preventedJoinByTicket = True
+                                   cl.updateGroup(X)
+                                   cl.sendMessage(msg.to, "Url Closed")
+
+                        elif cmd == "ลิ้ง":
+                          if DZwait["selfbot"] == True:
+                            if msg._from in ownerbot:
+                                if msg.toType == 2:
+                                   x = cl.getGroup(msg.to)
+                                   if x.preventedJoinByTicket == True:
+                                      x.preventedJoinByTicket = False
+                                      cl.updateGroup(x)
+                                   gurl = cl.reissueGroupTicket(msg.to)
+                                   cl.sendMessage(msg.to, "Nama : "+str(x.name)+ "\nUrl grup : http://line.me/R/ti/g/"+gurl)
 #======================= Update Name bots ====================#
                         elif cmd.startswith("clname: "):
                           if msg._from in ownerbot:
@@ -3327,7 +3364,7 @@ def bot(op):
                                 except:
                                     pass
 
-                        elif cmd == "มา" or cmd == "in":
+                        elif cmd == "มา" or cmd == "😁":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
@@ -3347,12 +3384,15 @@ def bot(op):
                                 k10.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 k11.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 k12.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                G = k12.getGroup(msg.to)
+                                G.preventedJoinByTicket = True
+                                k12.updateGroup(G)
                                 kicker = [JSmid]
                                 cl.inviteIntoGroup(msg.to, kicker)
                                 
                                 
 
-                        elif cmd == "ออก" or cmd == "out":
+                        elif cmd == "ออก" or cmd == "😂":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
@@ -3368,7 +3408,7 @@ def bot(op):
                                 k11.leaveGroup(msg.to)
                                 k12.leaveGroup(msg.to)
 
-                        elif cmd == "bye":
+                        elif cmd == "🤣":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
@@ -3518,6 +3558,21 @@ def bot(op):
                                          ginfo = cl.getGroup(msg.to)
                                          msgs = ""
                                     cl.sendMessage(msg.to, "All protect mode off")
+
+                        elif ("ดึง " in msg.text):
+                          if DZwait["selfbot"] == True:
+                            if msg._from in ownerbot:
+                               key = eval(msg.contentMetadata["MENTION"])
+                               key["MENTIONEES"][0]["M"]                                                                                                                                
+                               targets = []
+                               for x in key["MENTIONEES"]:                                                                                                                                  
+                                   targets.append(x["M"])
+                               for target in targets:                                                                                                                                       
+                                   try:
+                                      cl.findAndAddContactsByMid(target)
+                                      cl.inviteIntoGroup(msg.to,[target])
+                                   except:
+                                       pass
                        
                         elif ("Bk " in msg.text):
                           if DZwait["selfbot"] == True:
