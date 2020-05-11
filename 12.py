@@ -3559,6 +3559,15 @@ def bot(op):
                                          msgs = ""
                                     cl.sendMessage(msg.to, "All protect mode off")
 
+                        elif ("มิด " in msg.text):
+                          if DZwait["selfbot"] == True:
+                            if msg._from in ownerbot:
+                               key = eval(msg.contentMetadata["MENTION"])
+                               key1 = key["MENTIONEES"][0]["M"]
+                               mi = cl.getContact(key1)
+                               cl.sendMessage(msg.to, "Nama : "+str(mi.displayName)+"\nMID : " +key1)
+                               cl.sendMessage(msg.to, None, contentMetadata={'mid': key1}, contentType=13)
+
                         elif ("ดึง " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
