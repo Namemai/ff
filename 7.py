@@ -35,7 +35,7 @@ ka = LINE("cws34465@bcaoo.com","mai065558mai")
 ka.log("Auth Token : " + str(ka.authToken))
 channelToken = ka.getChannelResult()
 #========================Token2===================================================#
-kb = LINE("kuq55542@eoopy.com","mai065558mai")
+kb = LINE("oia90237@bcaoo.com","mai065558mai")
 kb.log("Auth Token : " + str(kb.authToken))
 channelToken = kb.getChannelResult()
 #========================Token3===================================================#
@@ -59,7 +59,7 @@ k7 = LINE("cnl60976@zzrgg.com","mai065558mai")
 k7.log("Auth Token : " + str(k7.authToken))
 channelToken = k7.getChannelResult()
 #========================8===================================================#
-ajs = LINE("oia90237@bcaoo.com","mai065558mai")
+ajs = LINE("oia@bcaoo.com","mai065558mai")
 ajs.log("Auth Token : " + str(kf.authToken))
 channelToken = ajs.getChannelResult()
 #==============•••••••••••••••••   BOT WAR V`1 BY TEAM BOT PROTECT •••••••••••••••==============#
@@ -164,8 +164,8 @@ Fmid = kf.getProfile().mid
 K7mid = k7.getProfile().mid
 JSmid = ajs.getProfile().mid
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,K7mid]
-ownerbot = ["u7dd3b094df38ef9fa28d313f73455389","u6db4e76a906e12763340d607557ae69e","u56c91625e49a9eb212fa815998bec501"]
-DHENZA = ["u7dd3b094df38ef9fa28d313f73455389","u6db4e76a906e12763340d607557ae69e","u56c91625e49a9eb212fa815998bec501"]
+ownerbot = ["u7dd3b094df38ef9fa28d313f73455389"]
+DHENZA = ["u7dd3b094df38ef9fa28d313f73455389"]
 TEAM = Bots+ownerbot+DHENZA
 msg_dict = {}
 msg_dict1 = {}
