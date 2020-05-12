@@ -190,8 +190,8 @@ Jmid = k11.getProfile().mid
 Kmid = k12.getProfile().mid
 JSmid = ajs.getProfile().mid
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Kmid]
-ownerbot = ["u7dd3b094df38ef9fa28d313f73455389","u6db4e76a906e12763340d607557ae69e"]
-DHENZA = ["u7dd3b094df38ef9fa28d313f73455389","u6db4e76a906e12763340d607557ae69e"]
+ownerbot = ["u7dd3b094df38ef9fa28d313f73455389"]
+DHENZA = ["u7dd3b094df38ef9fa28d313f73455389"]
 TEAM = Bots+ownerbot+DHENZA
 msg_dict = {}
 msg_dict1 = {}
@@ -560,7 +560,7 @@ def bot(op):
                     Z = cl.getGroup(op.param1)
                     if Z.preventedJoinByTicket == False:
                         Z.preventedJoinByTicket = True
-                        random.choice(team1).updateGroup(Z)
+                        random.choice(team2).updateGroup(Z)
                         random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
                         wait["blacklist"][op.param2] = True
                     else:
@@ -612,10 +612,7 @@ def bot(op):
                                                                 try:
                                                                     random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
                                                                 except:
-                                                                    try:
-                                                                        random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
-                                                                    except:
-                                                                        random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
+                                                                    random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
             if op.param3 in wait["blacklist"]:
                 if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
                     try:
@@ -654,10 +651,7 @@ def bot(op):
                                                                 try:
                                                                     random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
                                                                 except:
-                                                                    try:
-                                                                        random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
-                                                                    except:
-                                                                        random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
+                                                                    random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
                 else:pass
             if op.param3 in wait["blacklist"]:
                 if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
@@ -710,12 +704,8 @@ def bot(op):
                                                                     random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
                                                                     random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
                                                                 except:
-                                                                    try:
-                                                                        random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
-                                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
-                                                                    except:
-                                                                        random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
-                                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                                    random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
+                                                                    random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
                 else:pass
         if op.type == 17:
             if op.param2 in wait["blacklist"]:
@@ -756,10 +746,7 @@ def bot(op):
                                                                 try:
                                                                     random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
                                                                 except:
-                                                                    try:
-                                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
-                                                                    except:
-                                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                                    random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
                     cl.reissueGroupTicket(op.param1)
                     X = cl.getGroup(op.param1)
                     X.preventedJoinByTicket = True
@@ -804,10 +791,7 @@ def bot(op):
                                                                 try:
                                                                     random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
                                                                 except:
-                                                                    try:
-                                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
-                                                                    except:
-                                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                                    random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
         if op.type == 32:
             if op.param3 in TEAM or op.param3 in DZbot["Bots"] or op.param3 in DZbot["admin"]:
                 if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
@@ -860,12 +844,8 @@ def bot(op):
                                                                     random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
                                                                     random.choice(team2).inviteIntoGroup(op.param1,[op.param3])
                                                                 except:
-                                                                    try:
-                                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
-                                                                        random.choice(team2).inviteIntoGroup(op.param1,[op.param3])
-                                                                    except:
-                                                                        random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
-                                                                        random.choice(team2).inviteIntoGroup(op.param1,[op.param3])
+                                                                    random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                                    random.choice(team2).inviteIntoGroup(op.param1,[op.param3])
                 else:pass                    
         if op.type == 19:
                 if mid in op.param3:
@@ -993,6 +973,10 @@ def bot(op):
                                     k10.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     k11.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     k12.acceptGroupInvitationByTicket(op.param1,Ticket)
+                                    wait["blacklist"][op.param2] = True
+                                    G = random.choice(team2).getGroup(msg.to)
+                                    G.preventedJoinByTicket = True
+                                    random.choice(team2).updateGroup(G)
                                 except:
                                     try:
                                         kd.kickoutFromGroup(op.param1,[op.param2])
@@ -2497,7 +2481,7 @@ def bot(op):
                                                                     except:
                                                                         random.choice(team2).cancelGroupInvitation(op.param1,[i])
                         try:
-                            random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                            random.choice(team2).kickoutFromGroup(op.param1,[i])
                         except:
                             pass
                 if op.param2 not in wait["blacklist"]:pass
@@ -2573,9 +2557,27 @@ def bot(op):
                                         ke.kickoutFromGroup(op.param1,[op.param2])
                                     except:
                                         try:
-                                            random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                            kf.kickoutFromGroup(op.param1,[op.param2])
                                         except:
-                                            random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                            try:
+                                                k8.kickoutFromGroup(op.param1,[op.param2])
+                                            except:
+                                                try:
+                                                    k9.kickoutFromGroup(op.param1,[op.param2])
+                                                except:
+                                                    try:
+                                                        k10.kickoutFromGroup(op.param1,[op.param2])
+                                                    except:
+                                                        try:
+                                                            k11.kickoutFromGroup(op.param1,[op.param2])
+                                                        except:
+                                                            try:
+                                                                k12.kickoutFromGroup(op.param1,[op.param2])
+                                                            except:
+                                                                try:
+                                                                    random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                                except:
+                                                                    random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
                     try:
                         if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
                             wait["blacklist"][op.param2] = True
@@ -2688,9 +2690,27 @@ def bot(op):
                                         ke.kickoutFromGroup(op.param1,[op.param2])
                                     except:
                                         try:
-                                            random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                            kf.kickoutFromGroup(op.param1,[op.param2])
                                         except:
-                                            random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                            try:
+                                                k8.kickoutFromGroup(op.param1,[op.param2])
+                                            except:
+                                                try:
+                                                    k9.kickoutFromGroup(op.param1,[op.param2])
+                                                except:
+                                                    try:
+                                                        k10.kickoutFromGroup(op.param1,[op.param2])
+                                                    except:
+                                                        try:
+                                                            k11.kickoutFromGroup(op.param1,[op.param2])
+                                                        except:
+                                                            try:
+                                                                k12.kickoutFromGroup(op.param1,[op.param2])
+                                                            except:
+                                                                try:
+                                                                    random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
+                                                                except:
+                                                                    random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
                     try:
                         if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
                             wait["blacklist"][op.param2] = True
@@ -2740,8 +2760,8 @@ def bot(op):
         if op.type == 55:        
             if op.param2 in wait["blacklist"]:
                 if op.param2 not in TEAM and op.param2 not in DZbot["admin"] and op.param2 not in DZbot["Bots"]:
-                    random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
                     random.choice(team2).cancelGroupInvitation(op.param1,[op.param2])
+                    random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
              
         if op.type == 25 or op.type == 26:
             msg = op.message
@@ -3404,11 +3424,11 @@ def bot(op):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
+                                ka.leaveGroup(msg.to)
                                 kb.leaveGroup(msg.to)
                                 kc.leaveGroup(msg.to)
                                 kd.leaveGroup(msg.to)
                                 ke.leaveGroup(msg.to)
-                                ka.leaveGroup(msg.to)
                                 kf.leaveGroup(msg.to)
                                 k8.leaveGroup(msg.to)
                                 k9.leaveGroup(msg.to)
