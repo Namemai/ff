@@ -28,7 +28,7 @@ print("""
 \033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Start Bot ]\033[0m    
 """%(Bot_startTime))
 
-cl = LINE("06555mai@gmail.com","mai065558mai")
+cl = LINE("wwm88199@eoopy.com","mai065558mai")
 cl.log("Auth Token : " + str(cl.authToken))
 channelToken = cl.getChannelResult()
 #========================Token1===================================================#
