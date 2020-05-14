@@ -80,7 +80,7 @@ k12 = LINE("tqb31744@zzrgg.com","mai065558mai")
 k12.log("Auth Token : " + str(k12.authToken))
 channelToken = k12.getChannelResult()
 #========================Tokenjs===================================================#
-ajs = LINE("nus40411@eoopy.com","t3subnoi")
+ajs = LINE("nus40411@eoopy.com","mai065558mai")
 ajs.log("Auth Token : " + str(kf.authToken))
 channelToken = ajs.getChannelResult()
 #==============•••••••••••••••••   BOT WAR V`1 BY TEAM BOT PROTECT •••••••••••••••==============#
