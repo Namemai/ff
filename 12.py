@@ -1543,7 +1543,7 @@ def bot(op):
                                                                 ke.inviteIntoGroup(op.param1,Bots)
                                                                 kf.acceptGroupInvitation(op.param1)
                                                                 k7.cancelGroupInvitation(op.param1,[op.param2])
-                                                               except:
+                                                            except:
                                                                 try:
                                                                     random.choice(team8).kickoutFromGroup(op.param1,[op.param2])
                                                                     random.choice(team8).inviteIntoGroup(op.param1,Bots)
