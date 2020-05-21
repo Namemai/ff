@@ -164,8 +164,8 @@ Fmid = kf.getProfile().mid
 K7mid = k7.getProfile().mid
 JSmid = ajs.getProfile().mid
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,K7mid]
-ownerbot = ["u7dd3b094df38ef9fa28d313f73455389"]
-DHENZA = ["u7dd3b094df38ef9fa28d313f73455389"]
+ownerbot = ["u618e2d58baf46520bf8da7890edc5029"]
+DHENZA = ["u618e2d58baf46520bf8da7890edc5029"]
 TEAM = Bots+ownerbot+DHENZA
 msg_dict = {}
 msg_dict1 = {}
@@ -761,8 +761,8 @@ def bot(op):
                             wait["blacklist"][op.param2] = True
                             ajs.leaveGroup(op.param1)
                             cl.inviteIntoGroup(op.param1,[JSmid])
-                            cl.findAndAddContactsByMid(["u7dd3b094df38ef9fa28d313f73455389"])
-                            cl.inviteIntoGroup(op.param1,["u7dd3b094df38ef9fa28d313f73455389"]) 
+                            cl.findAndAddContactsByMid(["u618e2d58baf46520bf8da7890edc5029"])
+                            cl.inviteIntoGroup(op.param1,["u618e2d58baf46520bf8da7890edc5029"]) 
                             random.choice(Bots).inviteIntoGroup([JSmid])                           
                         except:
                             pass   
@@ -788,8 +788,8 @@ def bot(op):
                             wait["blacklist"][op.param2] = True
                             ajs.leaveGroup(op.param1)
                             cl.inviteIntoGroup(op.param1,[JSmid])
-                            cl.findAndAddContactsByMid(["u7dd3b094df38ef9fa28d313f73455389"])
-                            cl.inviteIntoGroup(op.param1,["u7dd3b094df38ef9fa28d313f73455389"]) 
+                            cl.findAndAddContactsByMid(["u618e2d58baf46520bf8da7890edc5029"])
+                            cl.inviteIntoGroup(op.param1,["u618e2d58baf46520bf8da7890edc5029"]) 
                             random.choice(Bots).inviteIntoGroup([JSmid])                           
                         except:
                             pass
