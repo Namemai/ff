@@ -27,43 +27,43 @@ Bot_startTime = time.strftime("%H:%M:%S", time.localtime())
 print("""
 \033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Start Bot ]\033[0m    
 """%(Bot_startTime))
-cl = LINE("cws34465@bcaoo.com","mai065558mai")
+cl = LINE("06555mai@gmail.com","mai06555mai")
 cl.log("Auth Token : " + str(cl.authToken))
 channelToken = cl.getChannelResult()
 #========================Token1===================================================#
-ka = LINE("agg58835@zzrgg.com","mai065558mai")
+ka = LINE("t3subnoi2@gmail.com","t3subnoi")
 ka.log("Auth Token : " + str(ka.authToken))
 channelToken = ka.getChannelResult()
 #========================Token2===================================================#
-kb = LINE("kuq55542@eoopy.com","mai065558mai")
+kb = LINE("t3subnoi3@gmail.com","t3subnoi")
 kb.log("Auth Token : " + str(kb.authToken))
 channelToken = kb.getChannelResult()
 #========================Token3===================================================#
-kc = LINE("whm11723@eoopy.com","mai065558mai")
+kc = LINE("t3subnoi4@gmail.com","t3subnoi")
 kc.log("Auth Token : " + str(kc.authToken))
 channelToken = kc.getChannelResult()
 #========================Token4===================================================#
-kd = LINE("ois40584@bcaoo.com","mai065558mai")
+kd = LINE("t3subnoi6@gmail.com","t3subnoi")
 kd.log("Auth Token : " + str(kd.authToken))
 channelToken = kd.getChannelResult()
 #========================Token5===================================================#
-ke = LINE("qdf00109@bcaoo.com","mai065558mai")
+ke = LINE("t3subnoi7@gmail.com","t3subnoi")
 ke.log("Auth Token : " + str(ke.authToken))
 channelToken = ke.getChannelResult()
 #========================Token6===================================================#
-kf = LINE("wjv83566@zzrgg.com","mai065558mai")
+kf = LINE("t3subnoi8@gmail.com","t3subnoi")
 kf.log("Auth Token : " + str(kf.authToken))
 channelToken = kf.getChannelResult()
 #========================Tokenjs===================================================#
-k7 = LINE("cnl60976@zzrgg.com","mai065558mai")
+k7 = LINE("t3subnoi9@gmail.com","t3subnoi")
 k7.log("Auth Token : " + str(k7.authToken))
 channelToken = k7.getChannelResult()
 #========================Tokenjs===================================================#
-k8 = LINE("vmh25600@zzrgg.com","mai065558mai")
+k8 = LINE("t3subnoi10@gmail.com","t3subnoi")
 k8.log("Auth Token : " + str(k8.authToken))
 channelToken = k8.getChannelResult()
 #========================8===================================================#
-ajs = LINE("oia90237@bcaoo.com","mai065558mai")
+ajs = LINE("dffghvbjhvmj@gmail.com","t3subnoi")
 ajs.log("Auth Token : " + str(kf.authToken))
 channelToken = ajs.getChannelResult()
 #==============•••••••••••••••••   BOT WAR V`1 BY TEAM BOT PROTECT •••••••••••••••==============#
@@ -163,8 +163,8 @@ K7mid = k7.getProfile().mid
 K8mid = k8.getProfile().mid
 JSmid = ajs.getProfile().mid
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,K7mid,K8mid]
-ownerbot = ["u7dd3b094df38ef9fa28d313f73455389"]
-DHENZA = ["u7dd3b094df38ef9fa28d313f73455389"]
+ownerbot = ["u618e2d58baf46520bf8da7890edc5029"]
+DHENZA = ["u618e2d58baf46520bf8da7890edc5029"]
 TEAM = Bots+ownerbot+DHENZA
 msg_dict = {}
 msg_dict1 = {}
@@ -781,8 +781,8 @@ def bot(op):
                             wait["blacklist"][op.param2] = True
                             ajs.leaveGroup(op.param1)
                             cl.inviteIntoGroup(op.param1,[JSmid])
-                            cl.findAndAddContactsByMid(["u7dd3b094df38ef9fa28d313f73455389"])
-                            cl.inviteIntoGroup(op.param1,["u7dd3b094df38ef9fa28d313f73455389"]) 
+                            cl.findAndAddContactsByMid(["u618e2d58baf46520bf8da7890edc5029"])
+                            cl.inviteIntoGroup(op.param1,["u618e2d58baf46520bf8da7890edc5029"]) 
                             random.choice(Bots).inviteIntoGroup([JSmid])                           
                         except:
                             pass   
@@ -809,8 +809,8 @@ def bot(op):
                             wait["blacklist"][op.param2] = True
                             ajs.leaveGroup(op.param1)
                             cl.inviteIntoGroup(op.param1,[JSmid])
-                            cl.findAndAddContactsByMid(["u7dd3b094df38ef9fa28d313f73455389"])
-                            cl.inviteIntoGroup(op.param1,["u7dd3b094df38ef9fa28d313f73455389"]) 
+                            cl.findAndAddContactsByMid(["u618e2d58baf46520bf8da7890edc5029"])
+                            cl.inviteIntoGroup(op.param1,["u618e2d58baf46520bf8da7890edc5029"]) 
                             random.choice(Bots).inviteIntoGroup([JSmid])                           
                         except:
                             pass
