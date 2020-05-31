@@ -1508,7 +1508,7 @@ def bot(op):
                         gMembMids = [contact.mid for contact in group.members]
                         for _mid in gMembMids:
                           if _mid in wait["blacklist"]:
-                            random.choice(team2).kickoutFromGroup(op.param1,[_mid])
+                            cl.kickoutFromGroup(op.param1,[_mid])
         if op.type == 13:
             if mid in op.param3:
                 if DZwait["autoJoin"] == True:
