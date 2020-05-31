@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 '''
-© Warbot v`1
+© Warbot v`3
 '''
 from important import *
 from thrift.unverting import *
@@ -135,63 +135,6 @@ print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m
 ▒█▀▀█ █▀▀█ █▀▀█ ▀▀█▀▀ █▀▀ █▀▀ ▀▀█▀▀ 
 ▒█▄▄█ █▄▄▀ █░░█ ░░█░░ █▀▀ █░░ ░░█░░ 
 ▒█░░░ ▀░▀▀ ▀▀▀▀ ░░▀░░ ▀▀▀ ▀▀▀ ░░▀░░ 
-
-███████████████████████████████████
-
-
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░█████████████████████████████░░░
-░░░██▄██▄██▄██▄██▄██▄██▄██▄██▄██░░░
-░░░█████████████████████████████░░░
-░░░██▄██░░░░░░░░░░░░░░░░░░░██▄██░░░
-░░░█████░░░░░░░░░░░░░░░░░░░█████░░░
-░░░██▄██░░░░░░░░░░░░░░░░░░░██▄██░░░
-░░░████████░░░░░░░░░░░░░████████░░░
-░░░░░░██▄██░░░░░░░░░░░░░██▄██░░░░░░
-░░░░░░███████████████████████░░░░░░
-░░░░░░██▄██▄██▄██▄██▄██▄██▄██░░░░░░
-░░░░░░███████████████████████░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██▄██▄██▄██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░░░░░░░██▄██░░░░░░░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██▄██▄██▄██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██▄██▄██▄██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██░██▄██░██▄██░░░░░░░░░░░░░░░
-░░░█████░█████░█████░░░░░░░░░░░░░░░
-░░░██▄██░██▄██░██▄██░░░░░░░░░░░░░░░
-░░░█████░█████░█████░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██▄██▄██▄██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██▄██▄██▄██░░░░░░░░░░░░░░░░░░
-░░░██████████████░░░░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░████████░░░░█████░░░░░░░░░░░░░░░
-░░░██▄██▄██░░░░██▄██░░░░░░░░░░░░░░░
-░░░███████████░█████░░░░░░░░░░░░░░░
-░░░██▄██░██▄██░██▄██░░░░░░░░░░░░░░░
-░░░█████░███████████░░░░░░░░░░░░░░░
-░░░██▄██░░░░██▄██▄██░░░░░░░░░░░░░░░
-░░░█████░░░░████████░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██▄██▄██▄██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░░░░██▄██░░░░██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██▄██▄██▄██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 ███████████████████████████████████
 	
@@ -4390,7 +4333,7 @@ def bot(op):
                                                                                             except:
                                                                                                 k20.cancelGroupInvitation(op.param1,[i])
                         try:
-                            random.choice(team2).kickoutFromGroup(op.param1,[i])
+                            random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
                         except:
                             pass
                 if op.param2 not in wait["blacklist"]:pass
@@ -4400,60 +4343,60 @@ def bot(op):
                     for i in inv2:
                         wait["blacklist"][i] = True
                         try:
-                            ka.cancelGroupInvitation(op.param1,[i])
+                            ka.kickoutFromGroup(op.param1,[op.param2])
                         except:
                             try:
-                                kb.cancelGroupInvitation(op.param1,[i])
+                                kb.kickoutFromGroup(op.param1,[op.param2])
                             except:
                                 try:
-                                    kc.cancelGroupInvitation(op.param1,[i])
+                                    kc.kickoutFromGroup(op.param1,[op.param2])
                                 except:
                                     try:
-                                        kd.cancelGroupInvitation(op.param1,[i])
+                                        kd.kickoutFromGroup(op.param1,[op.param2])
                                     except:
                                         try:
-                                            ke.cancelGroupInvitation(op.param1,[i])
+                                            ke.kickoutFromGroup(op.param1,[op.param2])
                                         except:
                                             try:
-                                                kf.cancelGroupInvitation(op.param1,[i])
+                                                kf.kickoutFromGroup(op.param1,[op.param2])
                                             except:
                                                 try:
-                                                    k8.cancelGroupInvitation(op.param1,[i])
+                                                    k8.kickoutFromGroup(op.param1,[op.param2])
                                                 except:
                                                     try:
-                                                        k9.cancelGroupInvitation(op.param1,[i])
+                                                        k9.kickoutFromGroup(op.param1,[op.param2])
                                                     except:
                                                         try:
-                                                            k10.cancelGroupInvitation(op.param1,[i])
+                                                            k10.kickoutFromGroup(op.param1,[op.param2])
                                                         except:
                                                             try:
-                                                                k11.cancelGroupInvitation(op.param1,[i])
+                                                                k11.kickoutFromGroup(op.param1,[op.param2])
                                                             except:
                                                                 try:
-                                                                    k12.cancelGroupInvitation(op.param1,[i])
+                                                                    k12.kickoutFromGroup(op.param1,[op.param2])
                                                                 except:
                                                                     try:
-                                                                        k13.cancelGroupInvitation(op.param1,[i])
+                                                                        k13.kickoutFromGroup(op.param1,[op.param2])
                                                                     except:
                                                                         try:
-                                                                            k14.cancelGroupInvitation(op.param1,[i])
+                                                                            k14.kickoutFromGroup(op.param1,[op.param2])
                                                                         except:
                                                                             try:
-                                                                                k15.cancelGroupInvitation(op.param1,[i])
+                                                                                k15.kickoutFromGroup(op.param1,[op.param2])
                                                                             except:
                                                                                 try:
-                                                                                    k16.cancelGroupInvitation(op.param1,[i])
+                                                                                    k16.kickoutFromGroup(op.param1,[op.param2])
                                                                                 except:
                                                                                     try:
-                                                                                        k17.cancelGroupInvitation(op.param1,[i])
+                                                                                        k17.kickoutFromGroup(op.param1,[op.param2])
                                                                                     except:
                                                                                         try:
-                                                                                            k18.cancelGroupInvitation(op.param1,[i])
+                                                                                            k18.kickoutFromGroup(op.param1,[op.param2])
                                                                                         except:
                                                                                             try:
-                                                                                                random.choice(team2).cancelGroupInvitation(op.param1,[i])
+                                                                                                k19.kickoutFromGroup(op.param1,[op.param2])
                                                                                             except:
-                                                                                                random.choice(team2).cancelGroupInvitation(op.param1,[i])
+                                                                                                k20.kickoutFromGroup(op.param1,[op.param2])
         if op.type == 17:
             if op.param1 in protectjoin:
                 if op.param2 not in TEAM and op.param2 not in DZbot["Bots"] and op.param2 not in DZbot["admin"]:
@@ -5105,26 +5048,26 @@ def bot(op):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                cl.sendMessage(msg.to,"threading.Thread(target=login, args=('a','"+cl.authToken+"')).start()")
-                               ka.sendMessage(msg.to,"threading.Thread(target=login, args=('a','"+ka.authToken+"')).start()")
-                               kb.sendMessage(msg.to,"threading.Thread(target=login, args=('b','"+kb.authToken+"')).start()")
-                               kc.sendMessage(msg.to,"threading.Thread(target=login, args=('c','"+kc.authToken+"')).start()")
-                               kd.sendMessage(msg.to,"threading.Thread(target=login, args=('d','"+kd.authToken+"')).start()")
-                               ke.sendMessage(msg.to,"threading.Thread(target=login, args=('e','"+ke.authToken+"')).start()")
-                               kf.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+kf.authToken+"')).start()")
-                               k8.sendMessage(msg.to,"threading.Thread(target=login, args=('b','"+k8.authToken+"')).start()")
-                               k9.sendMessage(msg.to,"threading.Thread(target=login, args=('c','"+k9.authToken+"')).start()")
-                               k10.sendMessage(msg.to,"threading.Thread(target=login, args=('d','"+k10.authToken+"')).start()")
-                               k11.sendMessage(msg.to,"threading.Thread(target=login, args=('e','"+k11.authToken+"')).start()")
-                               k12.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+k12.authToken+"')).start()")
-                               k13.sendMessage(msg.to,"threading.Thread(target=login, args=('c','"+k13.authToken+"')).start()")
-                               k14.sendMessage(msg.to,"threading.Thread(target=login, args=('d','"+k14.authToken+"')).start()")
-                               k15.sendMessage(msg.to,"threading.Thread(target=login, args=('e','"+k15.authToken+"')).start()")
-                               k16.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+k16.authToken+"')).start()")
-                               k17.sendMessage(msg.to,"threading.Thread(target=login, args=('b','"+k17.authToken+"')).start()")
-                               k18.sendMessage(msg.to,"threading.Thread(target=login, args=('c','"+k18.authToken+"')).start()")
-                               k19.sendMessage(msg.to,"threading.Thread(target=login, args=('d','"+k19.authToken+"')).start()")
-                               k20.sendMessage(msg.to,"threading.Thread(target=login, args=('e','"+k20.authToken+"')).start()")
-                               k21.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+k21.authToken+"')).start()")
+                               ka.sendMessage(msg.to,"threading.Thread(target=login, args=('b','"+ka.authToken+"')).start()")
+                               kb.sendMessage(msg.to,"threading.Thread(target=login, args=('c','"+kb.authToken+"')).start()")
+                               kc.sendMessage(msg.to,"threading.Thread(target=login, args=('d','"+kc.authToken+"')).start()")
+                               kd.sendMessage(msg.to,"threading.Thread(target=login, args=('e','"+kd.authToken+"')).start()")
+                               ke.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+ke.authToken+"')).start()")
+                               kf.sendMessage(msg.to,"threading.Thread(target=login, args=('g','"+kf.authToken+"')).start()")
+                               k8.sendMessage(msg.to,"threading.Thread(target=login, args=('h','"+k8.authToken+"')).start()")
+                               k9.sendMessage(msg.to,"threading.Thread(target=login, args=('i','"+k9.authToken+"')).start()")
+                               k10.sendMessage(msg.to,"threading.Thread(target=login, args=('j','"+k10.authToken+"')).start()")
+                               k11.sendMessage(msg.to,"threading.Thread(target=login, args=('k','"+k11.authToken+"')).start()")
+                               k12.sendMessage(msg.to,"threading.Thread(target=login, args=('l','"+k12.authToken+"')).start()")
+                               k13.sendMessage(msg.to,"threading.Thread(target=login, args=('m','"+k13.authToken+"')).start()")
+                               k14.sendMessage(msg.to,"threading.Thread(target=login, args=('n','"+k14.authToken+"')).start()")
+                               k15.sendMessage(msg.to,"threading.Thread(target=login, args=('o','"+k15.authToken+"')).start()")
+                               k16.sendMessage(msg.to,"threading.Thread(target=login, args=('p','"+k16.authToken+"')).start()")
+                               k17.sendMessage(msg.to,"threading.Thread(target=login, args=('q','"+k17.authToken+"')).start()")
+                               k18.sendMessage(msg.to,"threading.Thread(target=login, args=('r','"+k18.authToken+"')).start()")
+                               k19.sendMessage(msg.to,"threading.Thread(target=login, args=('s','"+k19.authToken+"')).start()")
+                               k20.sendMessage(msg.to,"threading.Thread(target=login, args=('t','"+k20.authToken+"')).start()")
+                               k21.sendMessage(msg.to,"threading.Thread(target=login, args=('u','"+k21.authToken+"')).start()")
                         elif cmd == "speedbot" or cmd == "spb":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
@@ -5590,9 +5533,9 @@ def bot(op):
                                          msgs = ""
                                     cl.sendMessage(msg.to, "Protect url mode off in group")
 
-                        elif 'Proinvite ' in msg.text:
+                        elif 'Proiv ' in msg.text:
                            if msg._from in ownerbot:
-                              spl = msg.text.replace('Proinvite ','')
+                              spl = msg.text.replace('Proiv ','')
                               if spl == 'on':
                                   if msg.to in protectinvite:
                                        msgs = "Succes"
@@ -5670,9 +5613,9 @@ def bot(op):
                                          msgs = ""
                                     cl.sendMessage(msg.to, "Protect cancel mode off in group")
 
-                        elif 'Protect ' in msg.text:
+                        elif 'Pro ' in msg.text:
                            if msg._from in ownerbot:
-                              spl = msg.text.replace('Protect ','')
+                              spl = msg.text.replace('Pro ','')
                               if spl == 'on':
                                   if msg.to in protectqr:
                                        msgs = ""
