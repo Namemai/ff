@@ -2211,8 +2211,8 @@ def bot(op):
                                                                     k12.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                                 except:
                                                                     try:
-                                                                        random.choice(team1).kickoutFromGroup(op.param1,[op.param2])
-                                                                        random.choice(team1).inviteIntoGroup(op.param1,Bots)
+                                                                        cl.kickoutFromGroup(op.param1,[op.param2])
+                                                                        cl.inviteIntoGroup(op.param1,Bots)
                                                                         k12.acceptGroupInvitation(op.param1)
                                                                         random.choice(team1).cancelGroupInvitation(op.param1,[op.param2])
                                                                     except:
