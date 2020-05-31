@@ -83,63 +83,6 @@ print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m
 ▒█░░░ ▀░▀▀ ▀▀▀▀ ░░▀░░ ▀▀▀ ▀▀▀ ░░▀░░ 
 
 ███████████████████████████████████
-
-
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░█████████████████████████████░░░
-░░░██▄██▄██▄██▄██▄██▄██▄██▄██▄██░░░
-░░░█████████████████████████████░░░
-░░░██▄██░░░░░░░░░░░░░░░░░░░██▄██░░░
-░░░█████░░░░░░░░░░░░░░░░░░░█████░░░
-░░░██▄██░░░░░░░░░░░░░░░░░░░██▄██░░░
-░░░████████░░░░░░░░░░░░░████████░░░
-░░░░░░██▄██░░░░░░░░░░░░░██▄██░░░░░░
-░░░░░░███████████████████████░░░░░░
-░░░░░░██▄██▄██▄██▄██▄██▄██▄██░░░░░░
-░░░░░░███████████████████████░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██▄██▄██▄██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░░░░░░░██▄██░░░░░░░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██▄██▄██▄██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██▄██▄██▄██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██░██▄██░██▄██░░░░░░░░░░░░░░░
-░░░█████░█████░█████░░░░░░░░░░░░░░░
-░░░██▄██░██▄██░██▄██░░░░░░░░░░░░░░░
-░░░█████░█████░█████░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██▄██▄██▄██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██▄██▄██▄██░░░░░░░░░░░░░░░░░░
-░░░██████████████░░░░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░████████░░░░█████░░░░░░░░░░░░░░░
-░░░██▄██▄██░░░░██▄██░░░░░░░░░░░░░░░
-░░░███████████░█████░░░░░░░░░░░░░░░
-░░░██▄██░██▄██░██▄██░░░░░░░░░░░░░░░
-░░░█████░███████████░░░░░░░░░░░░░░░
-░░░██▄██░░░░██▄██▄██░░░░░░░░░░░░░░░
-░░░█████░░░░████████░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██▄██▄██▄██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░░░░██▄██░░░░██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░██▄██▄██▄██▄██▄██░░░░░░░░░░░░░░░
-░░░█████████████████░░░░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-
-███████████████████████████████████
 	
 Login Time %s \033[0m\n\n"""%(Bot_startTime))
 print ("Proses login sucsess")
@@ -840,10 +783,10 @@ def bot(op):
                                 kd.cancelGroupInvitation(op.param1,[op.param2])
                             except:
                                 try:
-                                    G = random.choice(team2).getGroup(op.param1)
+                                    G = cl.getGroup(op.param1)
                                     G.preventedJoinByTicket = False
-                                    random.choice(team2).updateGroup(G)
-                                    Ticket = random.choice(team2).reissueGroupTicket(op.param1)
+                                    cl.updateGroup(G)
+                                    Ticket = cl.reissueGroupTicket(op.param1)
                                     time.sleep(0.001)
                                     cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                     ka.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -1236,8 +1179,8 @@ def bot(op):
                                             ka.cancelGroupInvitation(op.param1,[op.param2])                     
                                         except:
                                             try:
-                                                random.choice(team1).kickoutFromGroup(op.param1,[op.param2])
-                                                random.choice(team1).inviteIntoGroup(op.param1,Bots)
+                                                cl.kickoutFromGroup(op.param1,[op.param2])
+                                                cl.inviteIntoGroup(op.param1,Bots)
                                                 k7.acceptGroupInvitation(op.param1)
                                                 random.choice(team1).cancelGroupInvitation(op.param1,[op.param2])
                                             except:
@@ -1422,7 +1365,7 @@ def bot(op):
                         gMembMids = [contact.mid for contact in group.members]
                         for _mid in gMembMids:
                           if _mid in wait["blacklist"]:
-                            ka.kickoutFromGroup(op.param1,[_mid])
+                            cl.kickoutFromGroup(op.param1,[_mid])
         if op.type == 13:
             if mid in op.param3:
                 if DZwait["autoJoin"] == True:
@@ -1577,7 +1520,7 @@ def bot(op):
                                                     except:
                                                         random.choice(team2).cancelGroupInvitation(op.param1,[i])
                         try:
-                            random.choice(team2).kickoutFromGroup(op.param1,[i])
+                            random.choice(team2).kickoutFromGroup(op.param1,[op.param2])
                         except:
                             pass
                 if op.param2 not in wait["blacklist"]:pass
